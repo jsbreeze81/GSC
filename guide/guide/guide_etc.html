@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <!-- js -->
+    <script src="../js/guide.js"></script>
+    <script>
+        page.define();
+        page.loadFiles();
+    </script>
+</head>
+
+<body>
+    <script>
+        page.layout_Header();
+        page.layout_ContentTop();
+    </script>
+
+    <!-- guide -->
+    <h2 class="guide_tit_guidePage">기타</h2>
+
+    <h3 class="guide_tit_section">탭</h3>
+    <ul class="guide_list_desc">
+        <li>탭개수에 따라 스크립트로 클래스 추가</li>
+        <li>탭 8개까지 스타일 지정</li>
+        <li>선택된 탭 스타일 : is-active 클래스 추가</li>
+    </ul>
+    
+    <div class="guide_preview">
+        <div class="guide_resolution">
+            <button class="guide_res_pc" type="button">PC</button>
+            <button class="guide_res_m" type="button">M</button>
+        </div>
+        <!-- tab -->
+        <div class="tabBox">
+            <a href="#" class="tab is-active">탭1</a>
+            <a href="#" class="tab">탭2</a>
+            <a href="#" class="tab">탭3</a>
+            <a href="#" class="tab">탭4</a>
+        </div>
+        <!-- //tab -->
+    </div>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+            &lt;!-- tab --&gt;
+            &lt;div class="tabBox"&gt;
+                &lt;a href="#" class="tab is-active"&gt;탭1&lt;/a&gt;
+                &lt;a href="#" class="tab"&gt;탭2&lt;/a&gt;
+                &lt;a href="#" class="tab"&gt;탭3&lt;/a&gt;
+                &lt;a href="#" class="tab"&gt;탭4&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;!-- //tab --&gt;
+        </pre>
+    </div>
+
+    <h3 class="guide_tit_section">아이콘</h3>
+    <table class="guide_tbl_guide">
+        <colgroup>
+            <col style="width:20%;">
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Icon</th>
+                <th>Code</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><i class="ico_file">첨부파일</i></td>
+                <td>
+                    <pre class="brush:html; gutter:false;">
+                        &lt;i class="ico_file"&gt;첨부파일&lt;/i&gt;
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td><i class="ico_secret">비밀글</i></td>
+                <td>
+                    <pre class="brush:html; gutter:false;">
+                        &lt;i class="ico_secret"&gt;비밀글&lt;/i&gt;
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td><i class="mark mk_normal">공지</i></td>
+                <td>
+                    <pre class="brush:html; gutter:false;">
+                        &lt;i class="mark mk_normal"&gt;공지&lt;/i&gt;
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td><i class="mark mk_alert">모집종료</i></td>
+                <td>
+                    <pre class="brush:html; gutter:false;">
+                        &lt;i class="mark mk_alert"&gt;모집종료&lt;/i&gt;
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td><i class="mark mk_answer">답변완료</i></td>
+                <td>
+                    <pre class="brush:html; gutter:false;">
+                        &lt;i class="mark mk_answer"&gt;답변완료&lt;/i&gt;
+                    </pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- //guide -->
+
+    <script>page.layout_ContentBottom()</script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <!-- js -->
+    <script src="../js/guide.js"></script>
+    <script>
+        page.define();
+        page.loadFiles();
+    </script>
+</head>
+
+<body>
+    <script>
+        page.layout_Header();
+        page.layout_ContentTop();
+    </script>
+
+    <!-- guide -->
+    <h2 class="guide_tit_guidePage">CSS 기본 규칙</h2>
+
+    <!-- 주석표기 -->
+    <h3 class="guide_tit_section">주석표기</h3>
+    <ul class="guide_list_desc">
+        <li>코드 가독성을 높기이 위해 주석을 사용한다.</li>
+        <li>종료주석은 사용하지 않는다.</li>
+    </ul>
+    <div class="guide_guide_code">
+        <pre class="brush:css; gutter:false;">
+            /* 공통 스타일 */
+            .common{...}
+        </pre>
+    </div>
+    <!-- //주석표기 -->
+
+    <!-- z-index -->
+    <h3 class="guide_tit_section">z-index</h3>
+    <table class="guide_tbl_guide">
+        <colgroup>
+            <col style="width:33.3333%;" >
+            <col style="width:33.3333%;" >
+            <col >
+        </colgroup>
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>기본값</th>
+                <th>증감단위</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>일반 요소</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>레이아웃 요소</td>
+                <td>100</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>팝업 요소</td>
+                <td>1000</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- //z-index -->
+
+    <!-- 웹폰트 -->
+    <h3 class="guide_tit_section">웹폰트</h3>
+    <ul class="guide_list_desc">
+        <li>웹폰트는 'common.css'에 선언한다.</li>
+        <li>사용폰트 : Noto Sans KR, Noto Serif KR </li>
+        <li>직접 선언</li>
+    </ul>
+    <div class="guide_guide_code">
+        <pre class="brush:css; gutter:false;">
+            /* font - noto sans kr */
+            @font-face {
+                font-family: 'Noto Sans KR';
+                font-style: normal;
+                font-weight: 200;
+                src: url(../font/NotoSans-Light.woff2) format('woff2'),
+                    url(../font/NotoSans-Light.woff) format('woff'),
+                    url(../font/NotoSans-Light.otf) format('opentype')
+            }
+            @font-face {
+                font-family: 'Noto Sans KR';
+                font-style: normal;
+                font-weight: 300;
+                src: url(../font/NotoSans-DemiLight.woff2) format('woff2'),
+                    url(../font/NotoSans-DemiLight.woff) format('woff'),
+                    url(../font/NotoSans-DemiLight.otf) format('opentype')
+            }
+            @font-face {
+                font-family: 'Noto Sans KR';
+                font-style: normal;
+                font-weight: 400;
+                src: url(../font/NotoSans-Regular.woff2) format('woff2'),
+                    url(../font/NotoSans-Regular.woff) format('woff'),
+                    url(../font/NotoSans-Regular.otf) format('opentype')
+            }
+            @font-face {
+                font-family: 'Noto Sans KR';
+                font-style: normal;
+                font-weight: 500;
+                src: url(../font/NotoSans-Medium.woff2) format('woff2'),
+                    url(../font/NotoSans-Medium.woff) format('woff'),
+                    url(../font/NotoSans-Medium.otf) format('opentype')
+            }
+            @font-face {
+                font-family: 'Noto Sans KR';
+                font-style: normal;
+                font-weight: 700;
+                src: url(../font/NotoSans-Bold.woff2) format('woff2'),
+                    url(../font/NotoSans-Bold.woff) format('woff'),
+                    url(../font/NotoSans-Bold.otf) format('opentype')
+            }
+
+            /* font - noto serif kr */
+            @font-face {
+                font-family: 'Noto Serif KR';
+                font-style: normal;
+                font-weight: 400;
+                src: url(../font/NotoSerifCJKkr-Regular-subset.woff2) format('woff2'),
+                    url(../font/NotoSerifCJKkr-Regular-subset.woff) format('woff'),
+                    url(../font/NotoSerifCJKkr-Regular-subset.otf) format('opentype')
+            }
+        </pre>
+    </div>
+    <!-- //웹폰트 -->
+
+    <!-- 해상도 분기 -->
+    <h3 class="guide_tit_section">해상도 분기</h3>
+    <ul class="guide_list_desc">
+        <li>미디어쿼리를 이용해 분기한다.</li>
+        <li>상황에 맞게 해상도 설정</li>
+        <li>PC 화면부터 작업하는 경우 기본 분기</li>
+    </ul>
+    <div class="guide_guide_code">
+        <pre class="brush:css; gutter:false;">
+            @media screen and (max-width:1240px){
+                헤더, 푸터 분기
+            }
+        </pre>
+    </div>
+    <!-- //해상도 분기 -->
+
+    <script>page.layout_ContentBottom()</script>
+</body>
+</html>

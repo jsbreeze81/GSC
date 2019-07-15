@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <!-- js -->
+    <script src="../js/guide.js"></script>
+    <script>
+        page.define();
+        page.loadFiles();
+    </script>
+</head>
+
+<body>
+    <script>
+        page.layout_Header();
+        page.layout_ContentTop();
+    </script>
+
+    <!-- guide -->
+    <h2 class="guide_tit_guidePage">Form 요소</h2>
+
+    <h3 class="guide_tit_section">INPUT</h3>
+    
+    <div class="guide_preview">
+        <div class="guide_resolution">
+            <button class="guide_res_pc" type="button">PC</button>
+            <button class="guide_res_m" type="button">M</button>
+        </div>
+        <!-- input -->
+        <input type="text" class="form_input">
+        <!-- //input -->
+    </div>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+            &lt;input type="text" class="form_input"&gt;
+        </pre>
+    </div>
+
+    <h3 class="guide_tit_section">RADIO</h3>
+    
+    <div class="guide_preview">
+        <div class="guide_resolution">
+            <button class="guide_res_pc" type="button">PC</button>
+            <button class="guide_res_m" type="button">M</button>
+        </div>
+        <!-- radio -->
+        <label class="form_radio">라디오
+            <input type="radio">
+            <span class="sign"></span>
+        </label>
+        <!-- //radio -->
+    </div>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+            &lt;!-- radio --&gt;
+            &lt;label class="form_radio"&gt;라디오
+                &lt;input type="radio"&gt;
+                &lt;span class="sign"&gt;&lt;/span&gt;
+            &lt;/label&gt;
+            &lt;!-- //radio --&gt;
+        </pre>
+    </div>
+
+    <h3 class="guide_tit_section">CHECKBOX</h3>
+    
+    <div class="guide_preview">
+        <div class="guide_resolution">
+            <button class="guide_res_pc" type="button">PC</button>
+            <button class="guide_res_m" type="button">M</button>
+        </div>
+        <!-- checkbox -->
+        <label class="form_checkbox">체크박스
+            <input type="checkbox">
+            <span class="sign"></span>
+        </label>
+        <!-- //checkbox -->
+    </div>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+            &lt;!-- checkbox --&gt;
+            &lt;label class="form_checkbox"&gt;체크박스
+                &lt;input type="checkbox"&gt;
+                &lt;span class="sign"&gt;&lt;/span&gt;
+            &lt;/label&gt;
+            &lt;!-- //checkbox --&gt;
+        </pre>
+    </div>
+
+    <h3 class="guide_tit_section">SELECTBOX</h3>
+    
+    <div class="guide_preview">
+        <div class="guide_resolution">
+            <button class="guide_res_pc" type="button">PC</button>
+            <button class="guide_res_m" type="button">M</button>
+        </div>
+        <div class="form_select">
+            <button type="button" class="selector">전체</button>
+            <input type="hidden" class="setVal">
+            <!-- data-opt값이 .setVal value값으로 적용 -->
+            <ul class="opts">
+                <li><button type="button" data-opt="전체">전체</button></li>
+                <li><button type="button" data-opt="제목">제목</button></li>
+                <li><button type="button" data-opt="내용">내용</button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+            &lt;div class="form_select"&gt;
+                &lt;button type="button" class="selector"&gt;전체&lt;/button&gt;
+                &lt;input type="hidden" class="setVal"&gt;
+                &lt;!-- data-opt값이 .setVal value값으로 적용 --&gt;
+                &lt;ul class="opts"&gt;
+                    &lt;li&gt;&lt;button type="button" data-opt="전체"&gt;전체&lt;/button&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;button type="button" data-opt="제목"&gt;제목&lt;/button&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;button type="button" data-opt="내용"&gt;내용&lt;/button&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        </pre>
+    </div>
+
+    <h3 class="guide_tit_section">DATEPICKER</h3>
+    
+    <div class="guide_preview">
+        <div class="guide_resolution">
+            <button class="guide_res_pc" type="button">PC</button>
+            <button class="guide_res_m" type="button">M</button>
+        </div>
+        <!-- datepicker -->
+        <span class="calendar"><input type="text" class="form_input datepicker"></span>
+    </div>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+            &lt;!-- datepicker --&gt;
+            &lt;span class="calendar"&gt;&lt;input type="text" class="form_input datepicker"&gt;&lt;/span&gt;
+        </pre>
+    </div>
+
+    <h3 class="guide_tit_section">파일업로드</h3>
+    
+    <div class="guide_preview">
+        <div class="guide_resolution">
+            <button class="guide_res_pc" type="button">PC</button>
+            <button class="guide_res_m" type="button">M</button>
+        </div>
+        <!-- 파일 업로드 -->
+        <div class="uploadFile">
+            <input type="text" class="form_input" readonly>
+            <label>
+                <input type="file" class="form_file">
+                <span>파일선택</span>
+            </label>
+        </div>
+        <!-- //파일 업로드 -->
+    </div>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+            <!-- 파일 업로드 -->
+            &lt;div class="uploadFile"&gt;
+                &lt;input type="text" class="form_input" readonly&gt;
+                &lt;label&gt;
+                    &lt;input type="file" class="form_file"&gt;
+                    &lt;span&gt;파일선택&lt;/span&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;!-- //파일 업로드 --&gt;
+        </pre>
+    </div>
+
+    <h3 class="guide_tit_section">주소입력폼</h3>
+    
+    <div class="guide_preview">
+        <div class="guide_resolution">
+            <button class="guide_res_pc" type="button">PC</button>
+            <button class="guide_res_m" type="button">M</button>
+        </div>
+        <!-- 주소입력폼 -->
+        <span class="form_addr">
+            <a href="#" class="btnSt is-primary">주소검색</a>
+            <input type="text" class="form_input" readonly>
+        </span>
+        <!-- //주소입력폼 -->
+    </div>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+            &lt;!-- 주소입력폼 --&gt;
+            &lt;span class="form_addr"&gt;
+                &lt;a href="#" class="btnSt is-primary"&gt;주소검색&lt;/a&gt;
+                &lt;input type="text" class="form_input" readonly&gt;
+            &lt;/span&gt;
+            &lt;!-- //주소입력폼 --&gt;
+        </pre>
+    </div>
+    
+    <h3 class="guide_tit_section">전화번호 입력폼</h3>
+    
+    <div class="guide_preview">
+        <div class="guide_resolution">
+            <button class="guide_res_pc" type="button">PC</button>
+            <button class="guide_res_m" type="button">M</button>
+        </div>
+        <!-- 전화번호 입력폼 -->
+        <span class="form_tel">
+            <div class="form_select">
+                <button type="button" class="selector">010</button>
+                <input type="hidden" class="setVal">
+                <!-- data-opt값이 .setVal value값으로 적용 -->
+                <ul class="opts">
+                    <li><button type="button" data-opt="전체">010</button></li>
+                    <li><button type="button" data-opt="전체">011</button></li>
+                    <li><button type="button" data-opt="제목">016</button></li>
+                    <li><button type="button" data-opt="내용">017</button></li>
+                    <li><button type="button" data-opt="내용">019</button></li>
+                </ul>
+            </div>
+            <i class="dash">-</i>
+            <input type="text" class="form_input" title="전화번호앞번호">
+            <i class="dash">-</i>
+            <input type="text" class="form_input" title="전화번호뒷번호">
+        </span>
+        <!-- //전화번호 입력폼 -->
+    </div>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+            &lt;!-- 전화번호 입력폼 --&gt;
+            &lt;span class="form_tel"&gt;
+                &lt;div class="form_select"&gt;
+                    &lt;button type="button" class="selector"&gt;010&lt;/button&gt;
+                    &lt;input type="hidden" class="setVal"&gt;
+                    &lt;!-- data-opt값이 .setVal value값으로 적용 --&gt;
+                    &lt;ul class="opts"&gt;
+                        &lt;li&gt;&lt;button type="button" data-opt="전체"&gt;010&lt;/button&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;button type="button" data-opt="전체"&gt;011&lt;/button&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;button type="button" data-opt="제목"&gt;016&lt;/button&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;button type="button" data-opt="내용"&gt;017&lt;/button&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;button type="button" data-opt="내용"&gt;019&lt;/button&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;i class="dash"&gt;-&lt;/i&gt;
+                &lt;input type="text" class="form_input" title="전화번호앞번호"&gt;
+                &lt;i class="dash"&gt;-&lt;/i&gt;
+                &lt;input type="text" class="form_input" title="전화번호뒷번호"&gt;
+            &lt;/span&gt;
+            &lt;!-- //전화번호 입력폼 --&gt;
+        </pre>
+    </div>
+
+    <h3 class="guide_tit_section">TEXTAREA</h3>
+    
+    <div class="guide_preview">
+        <div class="guide_resolution">
+            <button class="guide_res_pc" type="button">PC</button>
+            <button class="guide_res_m" type="button">M</button>
+        </div>
+        <!-- textarea -->
+        <textarea class="form_textarea"></textarea>
+        <!-- //textarea -->
+    </div>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+            &lt;!-- textarea --&gt;
+            &lt;textarea class="form_textarea"&gt;&lt;/textarea&gt;
+            &lt;!-- //textarea --&gt;
+        </pre>
+    </div>
+
+    <!-- //guide -->
+
+    <script>page.layout_ContentBottom()</script>
+</body>
+</html>

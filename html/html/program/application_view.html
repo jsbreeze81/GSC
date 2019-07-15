@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <title>경희대학교 지구사회봉사단(GSC)</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/lib/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+
+    <!-- script -->
+    <script src="../../js/lib/jquery.min.js"></script>
+    <script src="../../js/lib/jquery-ui.min.js"></script>
+    <script src="../../js/pub/common.js"></script>
+    <script src="../../js/pub/ui.js"></script>
+</head>
+<body>
+    <a href="#container" class="skip">본문바로가기</a>
+    <header class="header">
+        <h1><a href="main.html">경희대학교 지구사회봉사단 GSC</a></h1>
+        <div class="inner top">
+            <div class="search">
+                <button type="button" class="searchOpen">검색열기</button>
+                <input type="text" placeholder="검색어를 입력해주세요">
+            </div>
+            <button type="button" class="openGnb">전체메뉴열기</button>
+        </div>
+        <!-- //inner -->
+        <div class="navGroup">
+            <nav>
+                <div class="inner">
+                    <ul class="gnb cf">
+                        <li>
+                            <a href="../about/introduce.html">GSC 소개</a>
+                            <ul>
+                                <li><a href="../about/introduce.html">About GSC</a></li>
+                                <li><a href="../about/ideology.html">경희의 사회공헌</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../program/global_list.html">봉사활동 프로그램</a>
+                            <ul>
+                                <li><a href="../program/global_list.html">GSC프로그램</a></li>
+                                <li><a href="../program/external_list.html">대외활동</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../donation/donation.html">사회기금참여</a>
+                            <ul>
+                                <li><a href="../donation/donation.html">사회기금참여</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../gallery/photo.html">활동기록실</a>
+                            <ul>
+                                <li><a href="../gallery/photo.html">사진</a></li>
+                                <li><a href="../gallery/video.html">영상</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../commnunity/notice_list.html">GSC소식</a>
+                            <ul>
+                                <li><a href="../commnunity/notice_list.html">공지사항</a></li>
+                                <li><a href="../commnunity/qna_list.html">Q&amp;A</a></li>
+                                <li><a href="../commnunity/21_list.html">전환21</a></li>
+                                <li><a href="../commnunity/service_list.html">사회봉사</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../network/network_list.html">협력네트워크</a>
+                            <ul>
+                                <li><a href="../network/network_list.html">협력네트워크</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gnbBg"></div>
+            </nav>
+            <div class="inner utilGroup">
+                <ul class="util01 cf">
+                    <li><a href="https://www.khu.ac.kr" target="_blank">경희대학교</a></li>
+                    <li><a href="https://mail.khu.ac.kr/welcome.do" target="_blank">웹메일</a></li>
+                    <li><a href="https://khuis.khu.ac.kr/" target="_blank">종합정보시스템</a></li>
+                </ul>
+                <ul class="util02 cf">
+                    <li><a href="https://www.khu.ac.kr" target="_blank">English</a></li>
+                    <li><a href="etc/sitemap.html">Sitemap</a></li>
+                    <li class="btn_login"><a href="member/login.html">Login</a></li>
+                </ul>
+            </div>
+            <!-- //utilGroup -->
+        </div>
+    </header>
+
+    <div id="container" class="container">
+        <!-- sub_visual -->
+        <div class="subVisual community">
+            <p class="txt01">Global Service Corps</p>
+            <p class="txt02">경희의 <strong>‘지구사회봉사단’</strong>이<br>대학의 미래, 인류의 미래를 향해 나아갑니다.</p>
+        </div>
+
+        <!-- page path -->
+        <div class="path">
+            <ul class="cf">
+                <li><a href="#" class="path_dep">HOME</a></li>
+                <li>
+                    <button type="button" class="path_dep selector">봉사활동 프로그램</button>
+                    <ul class="opts">
+                        <li><a href="#">GSC소개</a></li>
+                        <li><a href="#">봉사활동 프로그램</a></li>
+                        <li><a href="#">사회기금참여</a></li>
+                        <li><a href="#">활동기록실</a></li>
+                        <li><a href="#">게시판</a></li>
+                        <li><a href="#">협력네트워크</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button type="button" class="path_dep selector">GSC프로그램</button>
+                    <ul class="opts">
+                        <li><a href="#">GSC프로그램</a></li>
+                        <li><a href="#">대외활동</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- //page path -->
+
+        <div class="subInner">
+            <h2 class="tit_page">프로그램 참가신청</h2>
+            <p class="tit_page_sub">지구사회봉사단 GSC 프로그램 입니다.</p> 
+
+            <!-- tab -->
+            <div class="tabBox">
+				<a href="global_list.html" class="tab">GSC 해외 프로그램</a>
+				<a href="domestic_list.html" class="tab">GSC 국내 프로그램</a>
+				<a href="application_list.html" class="tab is-active">GSC 해외봉사 참가신청</a>
+            </div>
+            <!-- //tab -->
+			
+			<div class="application">
+				<h2 class="tit_print">사회공헌활동 참가신청서</h2>
+				<button type="button" class="btn_print" onclick="window.print();">인쇄</button>
+				<h3 class="app_tit">1. 기본정보</h3>
+				<table class="board_write02 m_tbl_type01">
+					<colgroup>
+						<col style="width: 15%">
+						<col style="width: 35%">
+						<col style="width: 15%">
+						<col style="width: 35%">
+					</colgroup>
+					<tr>
+						<th>참가 프로그램</th>
+						<td>2019-1 하계 르완다 해외봉사단</td>
+						<th>NO</th>
+						<td>999999</td>
+					</tr>
+					<tr>
+						<th>성명</th>
+						<td>홍길동</td>
+						<th>성별</th>
+						<td>남</td>
+					</tr>
+					<tr>
+						<th>소속 캠퍼스</th>
+						<td>서울캠퍼스</td>
+						<th>소속대학</th>
+						<td>전경대학</td>
+					</tr>
+					<tr>
+						<th>학과</th>
+						<td>정치외교</td>
+						<th>전공</th>
+						<td>정치외교</td>
+					</tr>
+					<tr>
+						<th>학번</th>
+						<td>1234567890</td>
+						<th>학년</th>
+						<td>1</td>
+					</tr>
+					<tr>
+						<th>생년월일</th>
+						<td>2000년 01월 01일</td>
+						<th>재학여부</th>
+						<td>재학</td>
+					</tr>
+					<tr>
+						<th>휴대전화</th>
+						<td>010-1234-5678</td>
+						<th>E-mail</th>
+						<td>email@email.com</td>
+					</tr>
+					<tr>
+						<th>주소</th>
+						<td colspan="3">(02447) 서울특별시 동대문구 경희대로 26, 경희대학교 (회기동)</td>
+					</tr>
+					<tr>
+						<th>사진</th>
+						<td colspan="3" class="photo"><img src="../../images/temp/user.png"></td>
+					</tr>
+				</table>
+				<!--//기본정보-->
+
+				<h3 class="app_tit">2. 여권정보</h3>
+				
+				<table class="board_write02 m_tbl_type01">
+					<colgroup>
+						<col style="width: 15%">
+						<col style="width: 35%">
+						<col style="width: 15%">
+						<col style="width: 35%">
+					</colgroup>					
+					<tr>
+						<th>영문명</th>
+						<td>Hong Gildong</td>
+						<th>여권번호</th>
+						<td>M12345678</td>
+					</tr>
+					<tr>
+						<th>여권만기일<p class="subInfo point">*잔여개월 6개월이상 필요</p></th>
+						<td>2030년 12월 31일</td>
+						<th>국적</th>
+						<td>REPUBLIC OF KOREA</td>
+					</tr>
+				</table>
+				<!--//여권정보-->
+				
+				<h3 class="app_tit">3. 보호자정보</h3>
+				<table class="board_write02 m_tbl_type01">
+					<colgroup>
+						<col style="width: 15%">
+						<col style="width: 35%">
+						<col style="width: 15%">
+						<col style="width: 35%">
+					</colgroup>					
+					<tr>
+						<th>성명</th>
+						<td>홍상직</td>
+						<th>관계</th>
+						<td>부</td>
+					</tr>
+					<tr>
+						<th>휴대전화</th>
+						<td>010-9876-5432</td>
+						<th>자택전화</th>
+						<td>02-1234-5678</td>
+					</tr>
+					<tr>
+						<th>주소</th>
+						<td colspan="3">(02447) 서울특별시 동대문구 경희대로 26, 경희대학교 (회기동)</td>
+					</tr>
+				</table>
+				<!--//보호자정보-->
+
+				<h3 class="app_tit" style="page-break-before: always;">4. 봉사활동 경력</h3>
+				<table class="board_write02 m_tbl_type02">
+					<colgroup>
+						<col style="width: 15%">
+						<col>
+					</colgroup>					
+					<tr>
+						<th>해외</th>
+						<td class="inTbl">
+							<dl class="carrer">
+								<dt>한국대학사회봉사협의회</dt>
+								<dd>2018.01.01 ~ 2018.02.01</dd>
+								<dd>100기 월드 프렌즈 청년봉사단 (미얀마 팀 AM 인솔)</dd>
+							</dl>
+						</td>
+					</tr>
+					<tr>
+						<th>국내</th>
+						<td class="inTbl">
+							<dl class="carrer">
+								<dt>삼성전자승마단 재활승마봉사</dt>
+								<dd>2019.01.01 ~ 2019.02.01</dd>
+								<dd>100기 월드 프렌즈 청년봉사단 (미얀마 팀 AM 인솔)</dd>
+							</dl>
+							<dl class="carrer">
+								<dt>한국대학사회봉사협의회</dt>
+								<dd>2018.01.01 ~ 2018.02.01</dd>
+								<dd>100기 월드 프렌즈 청년봉사단 (미얀마 팀 AM 인솔)</dd>
+							</dl>
+						</td>
+					</tr>
+					<tr>
+						<th>GSC 활동</th>
+						<td class="inTbl">
+							<dl class="carrer">
+								<dt>한국대학사회봉사협의회</dt>
+								<dd>2018.01.01 ~ 2018.02.01</dd>
+								<dd>100기 월드 프렌즈 청년봉사단 (미얀마 팀 AM 인솔)</dd>
+							</dl>
+						</td>
+					</tr>
+				</table>
+				<!--//봉사활동 경력-->
+				
+				<h3 class="app_tit">5. 기타</h3>
+				<table class="board_write02 m_tbl_type01">
+					<colgroup>
+						<col style="width: 15%">
+						<col>
+					</colgroup>					
+					<tr>
+						<th>특기 및 취미</th>
+						<td>피아노, 바이올린 연주가능<br>한식조리사 자격증</td>
+					</tr>
+					<tr>
+						<th>내가 생각하는 <br> 나의 모습</th>
+						<td>리더형, 참여형</td>
+					</tr>
+					<tr>
+						<th>저소득층 여부</th>
+						<td>예</td>
+					</tr>
+					<tr>
+						<th>증명서류</th>
+						<td><a href="#" class="file">증명서류.pdf</a></td>
+					</tr>
+					<tr>
+						<th>첨부파일</th>
+						<td><a href="#" class="file">첨부파일.zip</a></td>
+					</tr>
+				</table>
+				<!--//기타-->
+				
+				<h3 class="app_tit">6. 자기소개</h3>
+				<table class="board_write02 m_tbl_type01">
+					<colgroup>
+						<col style="width: 15%">
+						<col >
+					</colgroup>					
+					<tr>
+						<th>1. 자기소개</th>
+						<td>자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 </td>
+					</tr>
+					<tr>
+						<th>2. 지원동기</th>
+						<td>지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 지원동기 </td>
+					</tr>
+					<tr>
+						<th>3. 사회공헌에 <br> 대한 생각</th>
+						<td>사회공헌에 대한 생각 사회공헌에 대한 생각 사회공헌에 대한 생각 사회공헌에 대한 생각 사회공헌에 대한 생각 사회공헌에 대한 생각 사회공헌에 대한 생각 사회공헌에 대한 생각 사회공헌에 대한 생각 사회공헌에 대한 생각 사회공헌에 대한 생각 사회공헌에 대한 생각 사회공헌에 대한 생각 사회공헌에 대한 생각 사회공헌에 대한 생각 사회공헌에 대한 생각</td>
+					</tr>
+					<tr>
+						<th>4. 활동계획</th>
+						<td>활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획 활동계획</td>
+					</tr>
+				</table>
+				<!--//자기소개-->
+
+				<div class="app_box agree">
+					<table class="board_write02 m_tbl_type01">
+						<colgroup>
+							<col style="width: 15%">
+							<col>
+						</colgroup>						
+						<tr>
+							<th>개인정보 수집ㆍ활용ㆍ제공에 대한 신청자의 동의</th>
+							<td>
+								<p class="terms">
+									참가신청에 기재한 본인의 개인정보가 본 프로그램을 주관하는 지구사회봉사단 및 관련기관ㆍ단체 등에 사회공헌 프로그램에 대한 의견 수렴용으로 수집 및 활용,
+									제공되는 것에 대하여 동의합니다. (수집한 개인정보는 5년 후에 파기합니다.)
+								</p>
+								<strong class="agree">동의합니다</strong>
+							</td>
+						</tr>
+						<tr>
+							<th>참가자서의 <br> 의무·책임</th>
+							<td>
+								<p class="terms">
+								본 프로그램의 사전 준비모임부터 행사 종료 때까지의 공식입장에 성실히 참가할 것이며, 행사기간 중 인솔자의 지도 및 행사 규칙을 위반하여 발생하는 제반사항에
+								대해서는 어떠한 책임도 감수할 것을 서약합니다.
+								</p>
+								<strong class="agree">동의합니다</strong>
+							</td>
+						</tr>
+					</table>					
+				</div>
+				<!--//자기소개-->
+			</div>
+			<!--//app_write-->
+
+			<!-- 버튼 -->
+			<div class="btnArea is-center">
+				<a href="#" class="btnSt is-amend">수정</a>
+				<a href="#" class="btnSt is-delete gap">삭제</a>
+				<a href="#" class="btnSt is-primary gap">목록</a>
+			</div>
+			<!-- //버튼 -->
+        </div>
+        <!-- //subInner -->
+    </div>
+    <!-- //container -->
+
+    <footer class="footer">
+        <div class="familySite">
+            <div class="inner cf">
+                <div class="box cf">
+                    <div class="form_select">
+                        <button type="button" class="btn">경희대학교 관련기관</button>
+                        <ul class="linkList">
+                            <li><a href="http://neo.khmc.or.kr/" target="_blank">강동경희대학교병원</a></li>
+                            <li><a href="http://www.kyungheeboy.hs.kr" target="_blank">경희고등학교</a></li>
+                            <li><a href="http://www.khcu.ac.kr/" target="_blank">경희사이버대학교</a></li>
+                            <li><a href="http://kyunghee.hs.kr/" target="_blank">경희여자고등학교</a></li>
+                            <li><a href="http://kyungheegls.ms.kr/" target="_blank">경희여자중학교</a></li>
+                            <li><a href="http://www.khu.kg.kr/" target="_blank">경희유치원</a></li>
+                            <li><a href="http://www.khmc.or.kr/" target="_blank">경희의료원</a></li>
+                            <li><a href="http://www.kyunghee.ms.kr/" target="_blank">경희중학교</a></li>
+                            <li><a href="http://www.kyunghee.es.kr/" target="_blank">경희초등학교</a></li>
+                            <li><a href="http://www.khhp.co.kr/" target="_blank">경희한약</a></li>
+                            <li><a href="http://www.khua.or.kr/" target="_blank">총동문회</a></li>
+                            <li><a href="http://khus.ac.kr/" target="_blank">학교법인 경희학원</a></li>
+                        </ul>
+                    </div>
+                    <!-- //form_select -->
+                    <div class="form_select">
+                        <button type="button" class="btn">교내주요사이트</button>
+                        <ul class="linkList">
+                            <li><a href="http://innovation21.khu.ac.kr" target="_blank">21세기 대학혁신위원회</a></li>
+                            <li><a href="https://klas.khu.ac.kr/index.jsp" target="_blank">경희러닝아카이브시스템(KLAS)</a></li>
+                            <li><a href="http://ombuds.khu.ac.kr/" target="_blank">경희옴부즈</a></li>
+                            <li><a href="http://khgsc.khu.ac.kr/" target="_blank">경희지구사회봉사단</a></li>
+                            <li><a href="http://abeek.khu.ac.kr/" target="_blank">공학교육혁신센터</a></li>
+                            <li><a href="http://web.khu.ac.kr/~faculty/" target="_blank">교무과</a></li>
+                            <li><a href="http://khctl.khu.ac.kr/" target="_blank">교수학습지원센터</a></li>
+                            <li><a href="http://oiak.khu.ac.kr/" target="_blank">국제교류처</a></li>
+                            <li><a href="http://global.khu.ac.kr/" target="_blank">국제교육원(국제)</a></li>
+                            <li><a href="http://www.iie.ac.kr/" target="_blank">국제교육원(서울)</a></li>
+                            <li><a href="http://iga.khu.ac.kr/" target="_blank">국제지역연구원</a></li>
+                            <li><a href="http://isom.khu.ac.kr/" target="_blank">국제한의학교육원</a></li>
+                            <li><a href=" https://cce.khu.ac.kr" target="_blank">글로벌미래교육원</a></li>
+                            <li><a href="http://give.khu.ac.kr/" target="_blank">대외협력처</a></li>
+                            <li><a href="http://gafc.khu.ac.kr/" target="_blank">미래문명원</a></li>
+                            <li><a href="http://vision2020.khu.ac.kr/" target="_blank">미래전략</a></li>
+                            <li><a href="http://clean.khu.ac.kr/" target="_blank">부정청탁신고센터 </a></li>
+                            <li><a href="http://eduup.khu.ac.kr/" target="_blank">수도권대학 특성화사업</a></li>
+                            <li><a href="http://www.woojungwon.net/" target="_blank">생활관(국제-우정원)</a></li>
+                            <li><a href="https://dorm2.khu.ac.kr/" target="_blank">생활관(국제-제2기숙사)</a></li>
+                            <li><a href="http://web.khu.ac.kr/~sam-dom/" target="_blank">생활관(서울-삼의원)</a></li>
+                            <li><a href="http://sewhahall.khu.ac.kr/" target="_blank">생활관(서울-세화원)</a></li>
+                            <li><a href="http://happydorm.khu.ac.kr/" target="_blank">생활관(서울-행복기숙사)</a></li>
+                            <li><a href="http://shelter.khu.ac.kr" target="_blank">성평등상담실(국제)</a></li>
+                            <li><a href="http://web.khu.ac.kr/~happyou/" target="_blank">성평등상담실(서울)</a></li>
+                            <li><a href="http://media.khu.ac.kr/" target="_blank">신문방송국</a></li>
+                            <li><a href="http://safety.khu.ac.kr" target="_blank">연구실 안전관리 시스템</a></li>
+                            <li><a href="http://crf.khu.ac.kr/" target="_blank">연구실험지원센터</a></li>
+                            <li><a href="http://khao.khu.ac.kr/" target="_blank">우주과학교육관</a></li>
+                            <li><a href="http://crhs.khu.ac.kr/" target="_blank">인류사회재건연구원</a></li>
+                            <li><a href="http://nhm.khu.ac.kr/" target="_blank">자연사박물관</a></li>
+                            <li><a href="http://ois.khu.ac.kr" target="_blank">정보처</a></li>
+                            <li><a href="http://clia.khu.ac.kr/" target="_blank">중앙기기센터</a></li>
+                            <li><a href="http://library.khu.ac.kr/" target="_blank">중앙도서관</a></li>
+                            <li><a href="http://museum.khu.ac.kr/" target="_blank">중앙박물관</a></li>	
+                            <li><a href="http://khbi.khu.ac.kr/" target="_blank">창업보육센터(국제)</a></li>
+                            <li><a href="http://kbic.khu.ac.kr/" target="_blank">창업보육센터(서울)</a></li>
+                            <li><a href="http://khupress.com/" target="_blank">출판문화원</a></li>
+                            <li><a href="http://ice.khu.ac.kr" target="_blank">평생교육원/언어교육원</a></li>
+                            <li><a href="http://khugpp.khu.ac.kr/" target="_blank">평화의 전당</a></li>
+                            <li><a href="http://web.khu.ac.kr/~rotc/" target="_blank">학군단(국제)</a></li>
+                            <li><a href="http://web.khu.ac.kr/~rotc108/" target="_blank">학군단(서울)</a></li>
+                            <li><a href="http://hanbang.khu.ac.kr/" target="_blank">한방재료가공 학교기업</a></li>
+                            <li><a href="http://oldmaps.khu.ac.kr/" target="_blank">혜정박물관</a></li>
+                        </ul>
+                    </div>
+                    <!-- //form_select -->
+                    <div class="form_select">
+                        <button type="button" class="btn">GSC관련사이트</button>
+                        <ul class="linkList">
+                            <li><a href="https://1365.go.kr/vols/main.do" target="_blank">1365자원봉사포털</a></li>
+                            <li><a href="https://www.vms.or.kr/main.do" target="_blank">사회복지 자원봉사인증관리</a></li>
+                            <li><a href="https://www.donghaeng.seoul.kr/" target="_blank">서울 동행 프로젝트</a></li>
+                        </ul>
+                    </div>
+                    <!-- //form_select -->
+                </div>
+            </div>
+        </div>
+        <!-- //familySite -->
+
+        <div class="inner f_info">
+            <p class="tit">경희대학교 지구사회봉사단 GSC</p>
+            <p>서울특별시 동대문구 경희대로 29 경희대학교 생활과학대 612호<br> T. 02-961-0673 ｜ F. 02-961-0997  |  Email. khgsc@khu.ac.kr</p>
+            <address><span>COPYRIGHT  © 2012 Kyung Hee Global Service Corps.</span> ALL RIGHT RESERVED.</address>
+            <ul class="sns cf">
+                <li><a class="sns_fb" href="https://www.facebook.com/khgscpage" target="_blank">페이스북</a></li>
+                <li><a class="sns_tw" href="https://twitter.com/KHGSC" target="_blank">트위터</a></li>
+                <li><a class="sns_vm" href="https://vimeo.com/58518655" target="_blank">비메오</a></li>
+                <li><a class="sns_yt" href="https://www.youtube.com/user/khugsc" target="_blank">유튜브</a></li>
+            </ul>
+        </div>
+        <!-- //f_info -->
+    </footer>
+</body>
+</html>

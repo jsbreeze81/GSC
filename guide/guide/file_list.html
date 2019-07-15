@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <!-- js -->
+    <script src="../js/guide.js"></script>
+    <script>
+        page.define();
+        page.loadFiles();
+    </script>
+</head>
+
+<body>
+    <script>
+        page.layout_Header();
+        page.layout_ContentTop();
+    </script>
+
+    <!-- guide -->
+    <h2 class="guide_tit_guidePage">리스트</h2>
+    <div class="guide_progress">
+        <h3>작업진행률</h3>
+        <div class="guide_progressBox guide_percent_plan">
+            <div>기획<span class="guide_percent">10% (10/100)</span></div>
+            <div class="guide_bar guide_planBar"></div>
+        </div>
+        <div class="guide_progressBox guide_percent_design">
+            <div>디자인<span class="guide_percent">10% (10/100)</span></div>
+            <div class="guide_bar guide_designBar"></div>
+        </div>
+        <div class="guide_progressBox guide_percent_pub">
+            <div>퍼블<span class="guide_percent">10% (10/100)</span></div>
+            <div class="guide_bar guide_pubBar"></div>
+        </div>
+    </div>
+    <div class="h_overscroll">
+        <table class="guide_filelist">
+            <colgroup>
+                <col style="width:3%;">
+                <col style="width:10%;">
+                <col style="width:10%;">
+                <col style="width:10%;">
+                <col style="width:10%;">
+                <col style="width:22%;">
+                <col style="width:5%;">
+                <col style="width:5%;">
+                <col style="width:5%;">
+                <col style="width:20%;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Depth_01</th>
+                    <th>Depth_02</th>
+                    <th>Depth_03</th>
+                    <th>Tab/Popup</th>
+                    <th>Path</th>
+                    <th>기획</th>
+                    <th>디자인</th>
+                    <th>퍼블</th>
+                    <th>Comment</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="guide_alignCenter">1</td>
+                    <td aria-label="depth_01">메인</td>
+                    <td aria-label="depth_02"></td>
+                    <td aria-label="depth_03"></td>
+                    <td aria-label="tab_popup"></td>
+                    <td aria-label="html_path"><a href="../../html/html/main.html" target="_blank">/main.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">2</td>
+                    <td aria-label="depth_01">GSC 소개</td>
+                    <td aria-label="depth_02">About GSC</td>
+                    <td aria-label="depth_03">소개글</td>
+                    <td aria-label="tab_popup"></td>
+                    <td aria-label="html_path"><a href="../../html/html/about/introduce.html" target="_blank">/about/introduce.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">3</td>
+                    <td aria-label="depth_01"></td>
+                    <td aria-label="depth_02"></td>
+                    <td aria-label="depth_03">비전,가치,원칙</td>
+                    <td aria-label="tab_popup"></td>
+                    <td aria-label="html_path"><a href="../../html/html/about/vision.html" target="_blank">/about/vision.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">4</td>
+                    <td aria-label="depth_01"></td>
+                    <td aria-label="depth_02"></td>
+                    <td aria-label="depth_03">조직도</td>
+                    <td aria-label="tab_popup"></td>
+                    <td aria-label="html_path"><a href="../../html/html/about/org_chart.html" target="_blank">/about/org_chart.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">5</td>
+                    <td aria-label="depth_01"></td>
+                    <td aria-label="depth_02"></td>
+                    <td aria-label="depth_03">GSC 활동소개</td>
+                    <td aria-label="tab_popup"></td>
+                    <td aria-label="html_path"><a href="../../html/html/about/gsc.html" target="_blank">/about/gsc.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">6</td>
+                    <td aria-label="depth_01"></td>
+                    <td aria-label="depth_02">경희의 사회공헌</td>
+                    <td aria-label="depth_03">창학이념</td>
+                    <td aria-label="tab_popup"></td>
+                    <td aria-label="html_path"><a href="../../html/html/about/ideology.html" target="_blank">/about/ideology.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">7</td>
+                    <td aria-label="depth_01"></td>
+                    <td aria-label="depth_02"></td>
+                    <td aria-label="depth_03">대학사회공헌</td>
+                    <td aria-label="tab_popup"></td>
+                    <td aria-label="html_path"><a href="../../html/html/about/university.html" target="_blank">/about/university.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">8</td>
+                    <td aria-label="depth_01"></td>
+                    <td aria-label="depth_02"></td>
+                    <td aria-label="depth_03">경희 사회공헌의 역사</td>
+                    <td aria-label="tab_popup"></td>
+                    <td aria-label="html_path"><a href="../../html/html/about/history.html" target="_blank">/about/history.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">9</td>
+                    <td aria-label="depth_01">봉사활동프로그램</td>
+                    <td aria-label="depth_02">GSC 프로그램</td>
+                    <td aria-label="depth_03">GSC 해외 프로그램</td>
+                    <td aria-label="tab_popup">리스트</td>
+                    <td aria-label="html_path"><a href="../../html/html/program/global_list.html" target="_blank">/program/global_list.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">10</td>
+                    <td aria-label="depth_01"></td>
+                    <td aria-label="depth_02"></td>
+                    <td aria-label="depth_03"></td>
+                    <td aria-label="tab_popup">상세</td>
+                    <td aria-label="html_path"><a href="../../html/html/program/global_view.html" target="_blank">/program/global_view.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">11</td>
+                    <td aria-label="depth_01"></td>
+                    <td aria-label="depth_02"></td>
+                    <td aria-label="depth_03">GSC 국내 프로그램</td>
+                    <td aria-label="tab_popup">리스트</td>
+                    <td aria-label="html_path"><a href="../../html/html/program/domestic_list.html" target="_blank">/program/domestic_list.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">12</td>
+                    <td aria-label="depth_01"></td>
+                    <td aria-label="depth_02"></td>
+                    <td aria-label="depth_03"></td>
+                    <td aria-label="tab_popup">상세</td>
+                    <td aria-label="html_path"><a href="../../html/html/program/domestic_view.html" target="_blank">/program/domestic_view.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">13</td>
+                    <td aria-label="depth_01"></td>
+                    <td aria-label="depth_02"></td>
+                    <td aria-label="depth_03">GSC 해외봉사 참가신청</td>
+                    <td aria-label="tab_popup">리스트</td>
+                    <td aria-label="html_path"><a href="../../html/html/program/application_list.html" target="_blank">/program/application_list.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">14</td>
+                    <td aria-label="depth_01"></td>
+                    <td aria-label="depth_02"></td>
+                    <td aria-label="depth_03"></td>
+                    <td aria-label="tab_popup">상세</td>
+                    <td aria-label="html_path"><a href="../../html/html/program/application_view.html" target="_blank">/program/application_view.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">15</td>
+                    <td aria-label="depth_01"></td>
+                    <td aria-label="depth_02"></td>
+                    <td aria-label="depth_03"></td>
+                    <td aria-label="tab_popup">등록</td>
+                    <td aria-label="html_path"><a href="../../html/html/program/application_write.html" target="_blank">/program/application_write.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">16</td>
+                    <td aria-label="depth_01"></td>
+                    <td aria-label="depth_02">대외활동</td>
+                    <td aria-label="depth_03">대외모집</td>
+                    <td aria-label="tab_popup">리스트</td>
+                    <td aria-label="html_path"><a href="../../html/html/program/external_list.html" target="_blank">/program/external_list.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">17</td>
+                    <td aria-label="depth_01"></td>
+                    <td aria-label="depth_02"></td>
+                    <td aria-label="depth_03"></td>
+                    <td aria-label="tab_popup">상세</td>
+                    <td aria-label="html_path"><a href="../../html/html/program/external_view.html" target="_blank">/program/external_view.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">18</td>
+                    <td aria-label="depth_01"></td>
+                    <td aria-label="depth_02"></td>
+                    <td aria-label="depth_03">사회봉사 학점인정</td>
+                    <td aria-label="tab_popup">리스트</td>
+                    <td aria-label="html_path"><a href="../../html/html/program/credits_list.html" target="_blank">/program/credits_list.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">19</td>
+                    <td aria-label="depth_01"></td>
+                    <td aria-label="depth_02"></td>
+                    <td aria-label="depth_03"></td>
+                    <td aria-label="tab_popup">상세</td>
+                    <td aria-label="html_path"><a href="../../html/html/program/credits_view.html" target="_blank">/program/credits_view.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">20</td>
+                    <td aria-label="depth_01">활동기록실</td>
+                    <td aria-label="depth_02">활동사진</td>
+                    <td aria-label="depth_03"></td>
+                    <td aria-label="tab_popup"></td>
+                    <td aria-label="html_path"><a href="../../html/html/gallery/photo.html" target="_blank">/gallery/photo.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">22</td>
+                    <td aria-label="depth_01"></td>
+                    <td aria-label="depth_02">활동영상</td>
+                    <td aria-label="depth_03"></td>
+                    <td aria-label="tab_popup"></td>
+                    <td aria-label="html_path"><a href="../../html/html/gallery/video.html" target="_blank">/gallery/video.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">24</td>
+                    <td aria-label="depth_01">커뮤니티</td>
+                    <td aria-label="depth_02">공지사항</td>
+                    <td aria-label="depth_03">리스트</td>
+                    <td aria-label="tab_popup"></td>
+                    <td aria-label="html_path"><a href="../../html/html/community/notice_list.html" target="_blank">/community/notice_list.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">25</td>
+                    <td aria-label="depth_01"></td>
+                    <td aria-label="depth_02"></td>
+                    <td aria-label="depth_03">상세</td>
+                    <td aria-label="tab_popup"></td>
+                    <td aria-label="html_path"><a href="../../html/html/community/notice_view.html" target="_blank">/community/notice_view.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">26</td>
+                    <td aria-label="depth_01"></td>
+                    <td aria-label="depth_02">Q&amp;A</td>
+                    <td aria-label="depth_03">리스트</td>
+                    <td aria-label="tab_popup"></td>
+                    <td aria-label="html_path"><a href="../../html/html/community/qna_list.html" target="_blank">/community/qna_list.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">27</td>
+                    <td aria-label="depth_01"></td>
+                    <td aria-label="depth_02"></td>
+                    <td aria-label="depth_03">상세</td>
+                    <td aria-label="tab_popup"></td>
+                    <td aria-label="html_path"><a href="../../html/html/community/qna_view.html" target="_blank">/community/qna_view.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">28</td>
+                    <td aria-label="depth_01"></td>
+                    <td aria-label="depth_02"></td>
+                    <td aria-label="depth_03">등록</td>
+                    <td aria-label="tab_popup"></td>
+                    <td aria-label="html_path"><a href="../../html/html/community/qna_write.html" target="_blank">/community/qna_write.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">29</td>
+                    <td aria-label="depth_01"></td>
+                    <td aria-label="depth_02">전환21</td>
+                    <td aria-label="depth_03">리스트</td>
+                    <td aria-label="tab_popup"></td>
+                    <td aria-label="html_path"><a href="../../html/html/community/21_list.html" target="_blank">/community/21_list.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">30</td>
+                    <td aria-label="depth_01"></td>
+                    <td aria-label="depth_02"></td>
+                    <td aria-label="depth_03">상세</td>
+                    <td aria-label="tab_popup"></td>
+                    <td aria-label="html_path"><a href="../../html/html/community/21_view.html" target="_blank">/community/21_view.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">31</td>
+                    <td aria-label="depth_01"></td>
+                    <td aria-label="depth_02">사회봉사</td>
+                    <td aria-label="depth_03">리스트</td>
+                    <td aria-label="tab_popup"></td>
+                    <td aria-label="html_path"><a href="../../html/html/community/service_list.html" target="_blank">/community/service_list.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">32</td>
+                    <td aria-label="depth_01"></td>
+                    <td aria-label="depth_02"></td>
+                    <td aria-label="depth_03">상세</td>
+                    <td aria-label="tab_popup"></td>
+                    <td aria-label="html_path"><a href="../../html/html/community/service_view.html" target="_blank">/community/service_view.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">33</td>
+                    <td aria-label="depth_01">사회기금참여</td>
+                    <td aria-label="depth_02"></td>
+                    <td aria-label="depth_03"></td>
+                    <td aria-label="tab_popup"></td>
+                    <td aria-label="html_path"><a href="../../html/html/donation/donation.html" target="_blank">/donation/donation.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">34</td>
+                    <td aria-label="depth_01">협력네트워크</td>
+                    <td aria-label="depth_02">리스트</td>
+                    <td aria-label="depth_03"></td>
+                    <td aria-label="tab_popup"></td>
+                    <td aria-label="html_path"><a href="../../html/html/network/network_list.html" target="_blank">/network/network_list.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">35</td>
+                    <td aria-label="depth_01"></td>
+                    <td aria-label="depth_02">상세</td>
+                    <td aria-label="depth_03"></td>
+                    <td aria-label="tab_popup"></td>
+                    <td aria-label="html_path"><a href="../../html/html/network/network_view.html" target="_blank">/network/network_view.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">36</td>
+                    <td aria-label="depth_01">로그인</td>
+                    <td aria-label="depth_02"></td>
+                    <td aria-label="depth_03"></td>
+                    <td aria-label="tab_popup"></td>
+                    <td aria-label="html_path"><a href="../../html/html/member/login.html" target="_blank">/member/login.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">37</td>
+                    <td aria-label="depth_01">검색결과</td>
+                    <td aria-label="depth_02"></td>
+                    <td aria-label="depth_03"></td>
+                    <td aria-label="tab_popup"></td>
+                    <td aria-label="html_path"><a href="../../html/html/etc/search_result.html" target="_blank">/etc/search_result.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="guide_alignCenter">38</td>
+                    <td aria-label="depth_01">사이트맵</td>
+                    <td aria-label="depth_02"></td>
+                    <td aria-label="depth_03"></td>
+                    <td aria-label="tab_popup"></td>
+                    <td aria-label="html_path"><a href="../../html/html/etc/sitemap.html" target="_blank">/etc/sitemap.html</a></td>
+                    <td class="guide_works guide_plan" aria-label="기획"></td>
+                    <td class="guide_works guide_design" aria-label="디자인">●</td>
+                    <td class="guide_works guide_pub" aria-label="퍼블">●</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- //guide -->
+
+    <script>
+        guide_progress();
+        page.layout_ContentBottom();
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <!-- js -->
+    <script src="../js/guide.js"></script>
+    <script>
+        page.define();
+        page.loadFiles();
+    </script>
+</head>
+
+<body>
+    <script>
+        page.layout_Header();
+        page.layout_ContentTop();
+    </script>
+
+    <!-- guide -->
+    <h2 class="guide_tit_guidePage">문서선언</h2>
+
+    <!-- DTD -->
+    <h3 class="guide_tit_section">DTD(Document Type Definition)</h3>
+    <ul class="guide_list_desc">
+        <li>HTML5로 선언한다. 문서 최상단에 선언 한다.</li>
+    </ul>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+        &lt;!DOCTYPE html&gt;
+        </pre>
+    </div>
+    <!-- //DTD -->
+
+    <!-- 언어정의 -->
+    <h3 class="guide_tit_section">언어정의</h3>
+    <ul class="guide_list_desc">
+        <li>한국어 표기. 언어에 따라서 해당국가 언어로 표기한다.</li>
+    </ul>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+        &lt;html lang="ko"&gt;
+        </pre>
+    </div>
+    <!-- //언어정의 -->
+
+    <!-- 인코딩 -->
+    <h3 class="guide_tit_section">인코딩</h3>
+    <ul class="guide_list_desc">
+        <li>UTF-8 기본값으로 사용한다.</li>
+    </ul>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+        &lt;meta charset="utf-8"&gt;
+        </pre>
+    </div>
+    <!-- //인코딩 -->
+
+    <!-- 브라우저 호환성 -->
+    <h3 class="guide_tit_section">브라우저 호환성</h3>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+        </pre>
+    </div>
+    <!-- //브라우저 호환성 -->
+
+    <!-- 뷰포트 -->
+    <h3 class="guide_tit_section">뷰포트</h3>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+        &lt;meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no, initial-scale=1"&gt;
+        </pre>
+    </div>
+    <!-- //뷰포트 -->
+
+    <!-- 모바일 속성 -->
+    <h3 class="guide_tit_section">모바일 속성</h3>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+        &lt;meta name="mobile-web-app-capable" content="yes"&gt;
+        &lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;
+        &lt;meta name="format-detection" content="telephone=no, address=no, email=no"&gt;
+        &lt;meta http-equiv="x-rim-auto-match" content="none"&gt;
+        </pre>
+    </div>
+    <!-- //모바일 속성 -->
+
+    <!-- //guide -->
+
+    <script>page.layout_ContentBottom()</script>
+</body>
+</html>

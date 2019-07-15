@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/* font - noto sans kr */
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 200;
+    src: url(../font/NotoSans-Light.woff2) format('woff2'),
+         url(../font/NotoSans-Light.woff) format('woff'),
+         url(../font/NotoSans-Light.otf) format('opentype')
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../font/NotoSans-DemiLight.woff2) format('woff2'),
+         url(../font/NotoSans-DemiLight.woff) format('woff'),
+         url(../font/NotoSans-DemiLight.otf) format('opentype')
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/NotoSans-Regular.woff2) format('woff2'),
+         url(../font/NotoSans-Regular.woff) format('woff'),
+         url(../font/NotoSans-Regular.otf) format('opentype')
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../font/NotoSans-Medium.woff2) format('woff2'),
+         url(../font/NotoSans-Medium.woff) format('woff'),
+         url(../font/NotoSans-Medium.otf) format('opentype')
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../font/NotoSans-Bold.woff2) format('woff2'),
+         url(../font/NotoSans-Bold.woff) format('woff'),
+         url(../font/NotoSans-Bold.otf) format('opentype')
+}
+
+/* font - noto serif kr */
+@font-face {
+    font-family: 'Noto Serif KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/NotoSerifCJKkr-Regular-subset.woff2) format('woff2'),
+         url(../font/NotoSerifCJKkr-Regular-subset.woff) format('woff'),
+         url(../font/NotoSerifCJKkr-Regular-subset.otf) format('opentype')
+}
+
+*, *:before, *:after {margin:0; padding:0; -webkit-tap-highlight-color:rgba(0,0,0,0); box-sizing:border-box; -webkit-font-smoothing:antialiased;}
+fieldset,img{border:0 none}
+dl,ul,ol,menu,li{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+input,select,textarea,button{font-size:100%;vertical-align:middle;}
+button{margin:0; padding:0; border:0 none;background-color:transparent; font-family: 'Noto Sans KR'; cursor:pointer; line-height:1;}
+table{width:100%;border-collapse:collapse;border-spacing:0}
+textarea{resize:none; font-family: 'Noto Sans KR';}
+input{border-radius:0; font-family: 'Noto Sans KR';}
+input[type="text"],input[type="password"],input[type="date"],input[type="time"],input[type="submit"],input[type="button"],input[type="color"]{font-family: 'Noto Sans KR';}
+input[type="file"]{border:0;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+
+a, a:active, a:hover{text-decoration:none}
+address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
+
+body{font-size:16px; font-family: 'Noto Sans KR'; word-break:keep-all; font-weight:400;}
+
+/* common - util */
+.cf:after{content:""; display:block; clear:both;}
+
+.hidden{position:absolute; top:0; left:0; width:0; height:0; font-size:0; text-indent:-99999px; opacity:0; overflow: hidden;}
+
+/* 말줄임 */
+.ellipsis{text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; overflow:hidden;}

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <!-- js -->
+    <script src="../js/guide.js"></script>
+    <script>
+        page.define();
+        page.loadFiles();
+    </script>
+</head>
+
+<body>
+    <script>
+        page.layout_Header();
+        page.layout_ContentTop();
+    </script>
+
+    <!-- guide -->
+    <h2 class="guide_tit_guidePage">함수</h2>
+
+    <!-- 코드 들여쓰기 -->
+    <h3 class="guide_tit_section">코드 들여쓰기</h3>
+    <ul class="guide_list_desc">
+        <li>1탭 들여쓰기 하며, 1탭의 크기는 공백 4칸으로 설정한다.</li>
+    </ul>
+    <!-- //코드 들여쓰기 -->
+
+    <!-- 주석표기 -->
+    <h3 class="guide_tit_section">주석표기</h3>
+    <ul class="guide_list_desc">
+        <li>코드 가독성을 높기이 위해 주석을 사용한다.</li>
+        <li>종료 주석의 경우 '//'를 붙여 구분해 준다.</li>
+    </ul>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+            &lt;!-- 시작 --&gt;
+            &lt;div&gt;
+            &lt;/div&gt;
+            &lt;!-- //종료 --&gt;
+        </pre>
+    </div>
+    <!-- //주석표기 -->
+
+    <!-- 수정내용 표기 -->
+    <h3 class="guide_tit_section">수정내용 표기</h3>
+    <ul class="guide_list_desc">
+        <li>추가/수정/삭제등 변경이 있을 경우 해당내용을 주석으로 남긴다.(날짜, 수정내용, 이슈)</li>
+        <li>여러줄 수정일 경우 종료 주석을 사용한다.</li>
+    </ul>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+            &lt;!-- 190220 텍스트수정 --&gt;
+        </pre>
+    </div>
+    <!-- //수정내용 표기 -->
+
+    <!-- 기능설명 -->
+    <h3 class="guide_tit_section">기능설명</h3>
+    <ul class="guide_list_desc">
+        <li>상태변화나 기능구현에 사용하는 클래스명은 주석으로 내용을 설명한다.</li>
+    </ul>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+            &lt;!-- 메뉴 선택했을 때 스타일 변경 : is-selected 클래스 추가 --&gt;
+            &lt;div class="guide_is-selected"&gt;
+            메뉴명
+            &lt;/div&gt;
+        </pre>
+    </div>
+    <!-- //기능설명 -->
+
+    <!-- //guide -->
+
+    <script>page.layout_ContentBottom()</script>
+</body>
+</html>

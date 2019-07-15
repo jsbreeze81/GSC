@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <!-- js -->
+    <script src="../js/guide.js"></script>
+    <script>
+        page.define();
+        page.loadFiles();
+    </script>
+</head>
+
+<body>
+    <script>
+        page.layout_Header();
+        page.layout_ContentTop();
+    </script>
+
+    <!-- guide -->
+    <h2 class="guide_tit_guidePage">폴더·파일 구조</h2>
+    <div class="h_overscroll">
+        <table class="guide_tbl_guide">
+            <colgroup>
+                <col style="width:25%;" >
+                <col style="width:25%;" >
+                <col style="width:25%;" >
+                <col >
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>폴더</th>
+                    <th>하위폴더</th>
+                    <th>파일명</th>
+                    <th>설명</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="6">css</td>
+                    <td rowspan="2">lib (라이브러리)</td>
+                    <td>jquery-ui.min.css</td>
+                    <td>date picker 스타일</td>
+                </tr>
+                <tr>
+                    <td>owl.carousel.min.css</td>
+                    <td>슬라이더 스타일</td>
+                </tr>
+                <tr>
+                    <td rowspan="4"></td>
+                    <td>common.css</td>
+                    <td>공통 스타일</td>
+                </tr>
+                <tr>
+                    <td>laytou.css</td>
+                    <td>헤더, 푸터 스타일</td>
+                </tr>
+                <tr>
+                    <td>main.css</td>
+                    <td>메인페이지 스타일</td>
+                </tr>
+                <tr>
+                    <td>contents.css</td>
+                    <td>서브페이지 스타일</td>
+                </tr>
+                <tr>
+                    <td rowspan="6">js</td>
+                    <td rowspan="3">lib (라이브러리)</td>
+                    <td>jquery.min.js</td>
+                    <td>jquery 라이브러리</td>
+                </tr>
+                <tr>
+                    <td>jquery-ui.min.js</td>
+                    <td>date picker 라이브러리</td>
+                </tr>
+                <tr>
+                    <td>owl.carousel.min.js</td>
+                    <td>슬라이더</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">pub</td>
+                    <td>common.js</td>
+                    <td>공통 UI</td>
+                </tr>
+                <tr>
+                    <td>main.js</td>
+                    <td>메인페이지 UI</td>
+                </tr>
+                <tr>
+                    <td>ui.js</td>
+                    <td>콘텐츠페이지 UI</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">images</td>
+                    <td>lib</td>
+                    <td></td>
+                    <td>외부라이브러리용 이미지</td>
+                </tr>
+                <tr>
+                    <td>temp</td>
+                    <td></td>
+                    <td>가이드용 이미지</td>
+                </tr>
+                <tr>
+                    <td>font</td>
+                    <td></td>
+                    <td></td>
+                    <td>웹폰트</td>
+                </tr>
+                <tr>
+                    <td>html</td>
+                    <td></td>
+                    <td></td>
+                    <td>HTML 페이지</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- //guide -->
+
+    <script>page.layout_ContentBottom()</script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <!-- js -->
+    <script src="../js/guide.js"></script>
+    <script>
+        page.define();
+        page.loadFiles();
+    </script>
+</head>
+
+<body>
+    <script>
+        page.layout_Header();
+        page.layout_ContentTop();
+    </script>
+
+    <!-- guide -->
+    <h2 class="guide_tit_guidePage">버튼</h2>
+
+    <h3 class="guide_tit_section">버튼</h3>
+    <table class="guide_tbl_guide">
+        <colgroup>
+            <col style="width:20%;">
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Button</th>
+                <th>Code</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="#" class="btnSt is-primary">목록</a></td>
+                <td>
+                    <pre class="brush:html; gutter:false;">
+                        &lt;a href="#" class="btnSt is-primary"&gt;목록&lt;/a&gt;
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="#" class="btnSt is-secondary">목록</a></td>
+                <td>
+                    <pre class="brush:html; gutter:false;">
+                        &lt;a href="#" class="btnSt is-secondary"&gt;목록&lt;/a&gt;
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="#" class="btnSt is-amend">목록</a></td>
+                <td>
+                    <pre class="brush:html; gutter:false;">
+                        &lt;a href="#" class="btnSt is-amend"&gt;목록&lt;/a&gt;
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="#" class="btnSt is-delete">목록</a></td>
+                <td>
+                    <pre class="brush:html; gutter:false;">
+                        &lt;a href="#" class="btnSt is-delete"&gt;목록&lt;/a&gt;
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td><button type="button" class="btn_print">인쇄</button></td>
+                <td>
+                    <pre class="brush:html; gutter:false;">
+                        &lt;button type="button" class="btn_print"&gt;인쇄&lt;/button&gt;
+                    </pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3 class="guide_tit_section">버튼그룹</h3>
+    <ul class="guide_list_desc">
+        <li>기본 우측정렬</li>
+        <li>좌측 정렬 : 'on_left' 클래스 사용</li>
+        <li>버튼 간격 : 'gap' 클래스 사용 (좌측간격 추가)</li>
+    </ul>
+    <div class="guide_preview">
+        <div class="guide_resolution">
+            <button class="guide_res_pc" type="button">PC</button>
+            <button class="guide_res_m" type="button">M</button>
+        </div>
+        <!-- 버튼 -->
+        <div class="btnArea">
+            <a href="#" class="btnSt is-primary">목록</a>
+            <a href="#" class="btnSt is-secondary on_left">이전글</a>
+            <a href="#" class="btnSt is-secondary on_left gap">다음글</a>
+        </div>
+        <!-- //버튼 -->
+    </div>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+            &lt;!-- 버튼 --&gt;
+            &lt;div class="btnArea"&gt;
+                &lt;a href="#" class="btnSt is-primary"&gt;목록&lt;/a&gt;
+                &lt;a href="#" class="btnSt is-secondary on_left"&gt;이전글&lt;/a&gt;
+                &lt;a href="#" class="btnSt is-secondary on_left gap"&gt;다음글&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;!-- //버튼 --&gt;
+        </pre>
+    </div>
+
+    <h3 class="guide_tit_section">버튼정렬</h3>
+    <div class="guide_preview">
+        <div class="guide_resolution">
+            <button class="guide_res_pc" type="button">PC</button>
+            <button class="guide_res_m" type="button">M</button>
+        </div>
+        <!-- 버튼 -->
+        <div class="btnArea is-center">
+            <a href="#" class="btnSt is-amend gap">등록</a>
+            <a href="#" class="btnSt is-delete gap">취소</a>
+        </div>
+        <!-- //버튼 -->
+    </div>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+            &lt;!-- 버튼 --&gt;
+            &lt;div class="btnArea is-center"&gt;
+                &lt;a href="#" class="btnSt is-amend gap"&gt;등록&lt;/a&gt;
+                &lt;a href="#" class="btnSt is-delete gap"&gt;취소&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;!-- //버튼 --&gt;
+        </pre>
+    </div>
+
+    <div class="guide_preview">
+        <div class="guide_resolution">
+            <button class="guide_res_pc" type="button">PC</button>
+            <button class="guide_res_m" type="button">M</button>
+        </div>
+        <!-- 버튼 -->
+        <div class="btnArea is-left">
+            <a href="#" class="btnSt is-amend gap">등록</a>
+            <a href="#" class="btnSt is-delete gap">취소</a>
+        </div>
+        <!-- //버튼 -->
+    </div>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+            &lt;!-- 버튼 --&gt;
+            &lt;div class="btnArea is-left"&gt;
+                &lt;a href="#" class="btnSt is-amend gap"&gt;등록&lt;/a&gt;
+                &lt;a href="#" class="btnSt is-delete gap"&gt;취소&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;!-- //버튼 --&gt;
+        </pre>
+    </div>
+
+    <!-- //guide -->
+
+    <script>page.layout_ContentBottom()</script>
+</body>
+</html>

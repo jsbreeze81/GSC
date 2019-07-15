@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <!-- js -->
+    <script src="../js/guide.js"></script>
+    <script>
+        page.define();
+        page.loadFiles();
+    </script>
+</head>
+
+<body>
+    <script>
+        page.layout_Header();
+        page.layout_ContentTop();
+    </script>
+
+    <!-- guide -->
+    <h2 class="guide_tit_guidePage">타이틀</h2>
+
+    <h3 class="guide_tit_section">페이지 제목</h3>
+    
+    <div class="guide_preview">
+        <div class="guide_resolution">
+            <button class="guide_res_pc" type="button">PC</button>
+            <button class="guide_res_m" type="button">M</button>
+        </div>
+        <!-- 페이지 제목 -->
+        <h2 class="tit_page">페이지 제목</h2>
+        <!-- //페이지 제목 -->
+    </div>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+            &lt;!-- 페이지 제목 --&gt;
+            &lt;h2 class="tit_page"&gt;페이지 제목&lt;/h2&gt;
+            &lt;!-- //페이지 제목 --&gt;
+        </pre>
+    </div>
+
+    <!-- //guide -->
+
+    <script>page.layout_ContentBottom()</script>
+</body>
+</html>

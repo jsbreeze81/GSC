@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <!-- js -->
+    <script src="../js/guide.js"></script>
+    <script>
+        page.define();
+        page.loadFiles();
+    </script>
+</head>
+
+<body>
+    <script>
+        page.layout_Header();
+        page.layout_ContentTop();
+    </script>
+
+    <!-- guide -->
+    <h2 class="guide_tit_guidePage">게시판</h2>
+
+    <h3 class="guide_tit_section">리스트</h3>
+    <div class="guide_preview">
+        <div class="guide_resolution">
+            <button class="guide_res_pc" type="button">PC</button>
+            <button class="guide_res_m" type="button">M</button>
+        </div>
+        <!-- 게시판 리스트 -->
+        <table class="board_list">
+            <colgroup>
+                <col style="width:80px;">
+                <col style="width:100px;">
+                <col>
+                <col style="width:140px;">
+                <col style="width:120px;">
+                <col style="width:80px;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th colspan="2">제목</th>
+                    <th>작성자</th>
+                    <th>등록일</th>
+                    <th>조회</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="6">등록된 게시글이 없습니다</td>
+                </tr>
+                <tr>
+                    <td class="hide">3</td>
+                    <td class="state"><i class="mark mk_normal">공지</i></td>
+                    <td class="tit"><a href="#" class="ellipsis">경희대 중기봉사단 모집(06.10) 경희대 중기봉사단 모집(06.10)경희대 중기봉사단 모집(06.10)경희대 중기봉사단 모집(06.10)경희대 중기봉사단 모집(06.10)경희대 중기봉사단 모집(06.10)경희대 중기봉사단 모집(06.10)경희대 중기봉사단 모집(06.10)경희대 중기봉사단 모집(06.10)</a> <i class="ico_file">첨부파일</i> </td>
+                    <td class="writer">지구사회봉사단</td>
+                    <td class="date">2019.05.24</td>
+                    <td class="hide">99</td>
+                </tr>
+                <tr>
+                    <td class="hide">2</td>
+                    <td class="state"><i class="mark mk_alert">모집종료</i></td>
+                    <td class="tit"><a href="#" class="ellipsis">경희대 중기봉사단 모집(06.10)</a></td>
+                    <td class="writer">지구사회봉사단</td>
+                    <td class="date">2019.05.24</td>
+                    <td class="hide">99</td>
+                </tr>
+                <tr>
+                    <td class="hide">1</td>
+                    <td class="state"></td>
+                    <td class="tit"><a href="#" class="ellipsis">경희대 중기봉사단 모집(06.10)</a></td>
+                    <td class="writer">지구사회봉사단</td>
+                    <td class="date">2019.05.24</td>
+                    <td class="hide">99</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- //게시판 리스트 -->
+    </div>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+            &lt;!-- 게시판 리스트 --&gt;
+            &lt;table class="board_list"&gt;
+                &lt;colgroup&gt;
+                    &lt;col style="width:80px;"&gt;
+                    &lt;col style="width:100px;"&gt;
+                    &lt;col&gt;
+                    &lt;col style="width:140px;"&gt;
+                    &lt;col style="width:120px;"&gt;
+                    &lt;col style="width:80px;"&gt;
+                &lt;/colgroup&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;번호&lt;/th&gt;
+                        &lt;th colspan="2"&gt;제목&lt;/th&gt;
+                        &lt;th&gt;작성자&lt;/th&gt;
+                        &lt;th&gt;등록일&lt;/th&gt;
+                        &lt;th&gt;조회&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td colspan="6"&gt;등록된 게시글이 없습니다&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td class="hide"&gt;3&lt;/td&gt;
+                        &lt;td class="state"&gt;&lt;i class="mark mk_normal"&gt;공지&lt;/i&gt;&lt;/td&gt;
+                        &lt;td class="tit"&gt;&lt;a href="#" class="ellipsis"&gt;경희대 중기봉사단 모집(06.10) 경희대 중기봉사단 모집(06.10)경희대 중기봉사단 모집(06.10)경희대 중기봉사단 모집(06.10)경희대 중기봉사단 모집(06.10)경희대 중기봉사단 모집(06.10)경희대 중기봉사단 모집(06.10)경희대 중기봉사단 모집(06.10)경희대 중기봉사단 모집(06.10)&lt;/a&gt; &lt;i class="ico_file"&gt;첨부파일&lt;/i&gt; &lt;/td&gt;
+                        &lt;td class="writer"&gt;지구사회봉사단&lt;/td&gt;
+                        &lt;td class="date"&gt;2019.05.24&lt;/td&gt;
+                        &lt;td class="hide"&gt;99&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td class="hide"&gt;2&lt;/td&gt;
+                        &lt;td class="state"&gt;&lt;i class="mark mk_alert"&gt;모집종료&lt;/i&gt;&lt;/td&gt;
+                        &lt;td class="tit"&gt;&lt;a href="#" class="ellipsis"&gt;경희대 중기봉사단 모집(06.10)&lt;/a&gt;&lt;/td&gt;
+                        &lt;td class="writer"&gt;지구사회봉사단&lt;/td&gt;
+                        &lt;td class="date"&gt;2019.05.24&lt;/td&gt;
+                        &lt;td class="hide"&gt;99&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td class="hide"&gt;1&lt;/td&gt;
+                        &lt;td class="state"&gt;&lt;/td&gt;
+                        &lt;td class="tit"&gt;&lt;a href="#" class="ellipsis"&gt;경희대 중기봉사단 모집(06.10)&lt;/a&gt;&lt;/td&gt;
+                        &lt;td class="writer"&gt;지구사회봉사단&lt;/td&gt;
+                        &lt;td class="date"&gt;2019.05.24&lt;/td&gt;
+                        &lt;td class="hide"&gt;99&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;!-- //게시판 리스트 --&gt;
+        </pre>
+    </div>
+
+    <h3 class="guide_tit_section">게시글 상세</h3>
+    <div class="guide_preview">
+        <div class="guide_resolution">
+            <button class="guide_res_pc" type="button">PC</button>
+            <button class="guide_res_m" type="button">M</button>
+        </div>
+        <!-- 게시판 상세 -->
+        <table class="board_view">
+            <colgroup>
+                <col style="width:180px;">
+                <col >
+                <col style="width:150px;">
+            </colgroup>
+            <tr>
+                <th>제목</th>
+                <td>[Q&A] 캄보디아 해외봉사활동 관련 질문입니다.</td>
+                <td class="date">2019.07.01</td>
+            </tr>
+            <tr>
+                <th>작성자</th>
+                <td colspan="2">지원자</td>
+            </tr>
+            <tr>
+                <th>첨부파일</th>
+                <td colspan="2" class="downloadBox">
+                    <ul class="download">
+                        <li><a href="#">첨부파일.pdf</a></li>
+                        <li><a href="#">첨부파일.pdf</a></li>
+                        <li><a href="#">첨부파일.pdf</a></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="viewCont">
+                    지원서 신청란에 특징에 예시로 컴퓨터 활용능력에 대해 써도 된다고 쓰여있는데요,<br>
+                    캄보디아의 봉사활동에서 혹시 교육봉사를 컴퓨터를 가르칠 수 있는 여건이 되나요?<br>
+                    아니면 컴퓨터를 활용한 활동이 따로 있나요?
+                </td>
+            </tr>
+            <!-- 답변 -->
+            <tr>
+                <td colspan="3" class="answer">
+                    <p class="writer"><strong>지구사회봉사단</strong> 19-07-01</p>
+                    <div>
+                        안녕하세요? 해외봉사단 담당자입니다. <br>
+                        지원서는 '경희지구사회봉사단 사무국'이 운영하는 모든 프로그램에 통용되는 공통 양식이라 예시가 그렇게 되어 있습니다. <br>
+                        '개발도상국에 파견될 단원'으로 본인을 어필할 수 있는 다른 특기가 있다면 적어주세요. <br>
+                        크나사원초등학교에 컴퓨터실이 있으나 한 교실에 들어갈 수 있는 인원이 적습니다.<br>
+                        이번 해외봉사단원은 현지 초등학생 100~600여 명을 대상으로 진행할 교육봉사를 준비하셔야 되니,<br>
+                        본인 전공이나 특기를 살려서 아이들과 함께 할 수 있는 프로그램을 생각해 보시면 지원에 도움이 되실 듯합니다.
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <!-- //게시판 상세 -->
+    </div>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+            &lt;!-- 게시판 상세 --&gt;
+            &lt;table class="board_view"&gt;
+                &lt;colgroup&gt;
+                    &lt;col style="width:180px;"&gt;
+                    &lt;col &gt;
+                    &lt;col style="width:150px;"&gt;
+                &lt;/colgroup&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;제목&lt;/th&gt;
+                    &lt;td&gt;[Q&A] 캄보디아 해외봉사활동 관련 질문입니다.&lt;/td&gt;
+                    &lt;td class="date"&gt;2019.07.01&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;작성자&lt;/th&gt;
+                    &lt;td colspan="2"&gt;지원자&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;첨부파일&lt;/th&gt;
+                    &lt;td colspan="2" class="downloadBox"&gt;
+                        &lt;ul class="download"&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;첨부파일.pdf&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;첨부파일.pdf&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;첨부파일.pdf&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td colspan="3" class="viewCont"&gt;
+                        지원서 신청란에 특징에 예시로 컴퓨터 활용능력에 대해 써도 된다고 쓰여있는데요,&lt;br&gt;
+                        캄보디아의 봉사활동에서 혹시 교육봉사를 컴퓨터를 가르칠 수 있는 여건이 되나요?&lt;br&gt;
+                        아니면 컴퓨터를 활용한 활동이 따로 있나요?
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;!-- 답변 --&gt;
+                &lt;tr&gt;
+                    &lt;td colspan="3" class="answer"&gt;
+                        &lt;p class="writer"&gt;&lt;strong&gt;지구사회봉사단&lt;/strong&gt; 19-07-01&lt;/p&gt;
+                        &lt;div&gt;
+                            안녕하세요? 해외봉사단 담당자입니다. &lt;br&gt;
+                            지원서는 '경희지구사회봉사단 사무국'이 운영하는 모든 프로그램에 통용되는 공통 양식이라 예시가 그렇게 되어 있습니다. &lt;br&gt;
+                            '개발도상국에 파견될 단원'으로 본인을 어필할 수 있는 다른 특기가 있다면 적어주세요. &lt;br&gt;
+                            크나사원초등학교에 컴퓨터실이 있으나 한 교실에 들어갈 수 있는 인원이 적습니다.&lt;br&gt;
+                            이번 해외봉사단원은 현지 초등학생 100~600여 명을 대상으로 진행할 교육봉사를 준비하셔야 되니,&lt;br&gt;
+                            본인 전공이나 특기를 살려서 아이들과 함께 할 수 있는 프로그램을 생각해 보시면 지원에 도움이 되실 듯합니다.
+                        &lt;/div&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;!-- //게시판 상세 --&gt;
+        </pre>
+    </div>
+
+    <h3 class="guide_tit_section">검색</h3>
+    <div class="guide_preview">
+        <div class="guide_resolution">
+            <button class="guide_res_pc" type="button">PC</button>
+            <button class="guide_res_m" type="button">M</button>
+        </div>
+        <!-- 검색 -->
+        <div class="search">
+            <div class="form_select">
+                <button type="button" class="selector">전체</button>
+                <input type="hidden" class="setVal">
+                <!-- data-opt값이 .setVal value값으로 적용 -->
+                <ul class="opts">
+                    <li><button type="button" data-opt="전체">전체</button></li>
+                    <li><button type="button" data-opt="제목">제목</button></li>
+                    <li><button type="button" data-opt="내용">내용</button></li>
+                </ul>
+            </div>
+            <span class="keywordBox">
+                <label for="keyword" class="hidden">검색어입력</label>
+                <input type="text" id="keyword" class="form_input">
+                <a href="#">검색</a>
+            </span>
+        </div>
+        <!-- //검색 -->
+    </div>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+            &lt;!-- 검색 --&gt;
+            &lt;div class="search"&gt;
+                &lt;div class="form_select"&gt;
+                    &lt;button type="button" class="selector"&gt;전체&lt;/button&gt;
+                    &lt;input type="hidden" class="setVal"&gt;
+                    &lt;!-- data-opt값이 .setVal value값으로 적용 --&gt;
+                    &lt;ul class="opts"&gt;
+                        &lt;li&gt;&lt;button type="button" data-opt="전체"&gt;전체&lt;/button&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;button type="button" data-opt="제목"&gt;제목&lt;/button&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;button type="button" data-opt="내용"&gt;내용&lt;/button&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;span class="keywordBox"&gt;
+                    &lt;label for="keyword" class="hidden"&gt;검색어입력&lt;/label&gt;
+                    &lt;input type="text" id="keyword" class="form_input"&gt;
+                    &lt;a href="#"&gt;검색&lt;/a&gt;
+                &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;!-- //검색 --&gt;
+        </pre>
+    </div>
+
+    <h3 class="guide_tit_section">Paging</h3>
+    <div class="guide_preview">
+        <div class="guide_resolution">
+            <button class="guide_res_pc" type="button">PC</button>
+            <button class="guide_res_m" type="button">M</button>
+        </div>
+        <!-- paging -->
+        <div class="paging">
+            <a href="#"><img src="../../html/images/btnFirst.png" alt="첫페이지"></a>
+            <a href="#"><img src="../../html/images/borad_prev.png" alt="이전페이지"></a>
+            <span>
+                <a href="#" class="on">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+            </span>
+            <a href="#"><img src="../../html/images/borad_next.png" alt="다음페이지"></a>
+            <a href="#"><img src="../../html/images/btnlast.png" alt="마지막페이지"></a>
+        </div>
+        <!-- //paging -->
+    </div>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+            &lt;!-- paging --&gt;
+            &lt;div class="paging"&gt;
+                &lt;a href="#"&gt;&lt;img src="../images/btnFirst.png" alt="첫페이지"&gt;&lt;/a&gt;
+                &lt;a href="#"&gt;&lt;img src="../images/borad_prev.png" alt="이전페이지"&gt;&lt;/a&gt;
+                &lt;span&gt;
+                    &lt;a href="#" class="on"&gt;1&lt;/a&gt;
+                    &lt;a href="#"&gt;2&lt;/a&gt;
+                    &lt;a href="#"&gt;3&lt;/a&gt;
+                    &lt;a href="#"&gt;4&lt;/a&gt;
+                    &lt;a href="#"&gt;5&lt;/a&gt;
+                &lt;/span&gt;
+                &lt;a href="#"&gt;&lt;img src="../images/borad_next.png" alt="다음페이지"&gt;&lt;/a&gt;
+                &lt;a href="#"&gt;&lt;img src="../images/btnlast.png" alt="마지막페이지"&gt;&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;!-- //paging --&gt;
+        </pre>
+    </div>
+
+    <h3 class="guide_tit_section">이전 다음글</h3>
+    <div class="guide_preview">
+        <div class="guide_resolution">
+            <button class="guide_res_pc" type="button">PC</button>
+            <button class="guide_res_m" type="button">M</button>
+        </div>
+        <!-- 이전다음글 -->
+        <table class="board_nav">
+            <colgroup>
+                <col style="width:140px;">
+                <col >
+            </colgroup>
+            <tr>
+                <th class="prev">이전글</th>
+                <td><a href="#">이전글 제목</a></td>
+            </tr>
+            <tr>
+                <th class="next">다음글</th>
+                <td>다음글이 없습니다.</td>
+            </tr>
+        </table>
+        <!-- //이전다음글 -->
+    </div>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+            &lt;!-- 이전다음글 --&gt;
+            &lt;table class="board_nav"&gt;
+                &lt;colgroup&gt;
+                    &lt;col style="width:140px;"&gt;
+                    &lt;col &gt;
+                &lt;/colgroup&gt;
+                &lt;tr&gt;
+                    &lt;th class="prev"&gt;이전글&lt;/th&gt;
+                    &lt;td&gt;&lt;a href="#"&gt;이전글 제목&lt;/a&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;th class="next"&gt;다음글&lt;/th&gt;
+                    &lt;td&gt;다음글이 없습니다.&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;!-- //이전다음글 --&gt;
+        </pre>
+    </div>
+
+    <h3 class="guide_tit_section">글등록</h3>
+    <div class="guide_preview">
+        <div class="guide_resolution">
+            <button class="guide_res_pc" type="button">PC</button>
+            <button class="guide_res_m" type="button">M</button>
+        </div>
+        <!-- 게시판 등록 -->
+        <table class="board_write">
+            <colgroup>
+                <col style="width:160px;">
+                <col >
+            </colgroup>
+            <tr>
+                <th>제목</th>
+                <td class="tit"><input type="text" class="form_input"></td>
+            </tr>
+            <tr>
+                <th>작성자</th>
+                <td>로그인한 아이디</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="editor">
+                    에디터 영역
+                </td>
+            </tr>
+            <tr>
+                <th>첨부파일</th>
+                <td>
+                    <!-- 파일 업로드 -->
+                    <div class="uploadFile">
+                        <label>
+                            <input type="file" class="form_file">
+                            <input type="text" class="form_input" readonly>
+                            <span>파일선택</span>
+                        </label>
+                    </div>
+                    <!-- //파일 업로드 -->
+                </td>
+            </tr>
+        </table>
+        <!-- //게시판 등록 -->
+    </div>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+            &lt;!-- 게시판 등록 --&gt;
+            &lt;table class="board_write"&gt;
+                &lt;colgroup&gt;
+                    &lt;col style="width:160px;"&gt;
+                    &lt;col &gt;
+                &lt;/colgroup&gt;
+                &lt;tr&gt;
+                    &lt;th>제목&lt;/th&gt;
+                    &lt;td class="tit">&lt;input type="text" class="form_input"&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;작성자&lt;/th&gt;
+                    &lt;td&gt;로그인한 아이디&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td colspan="2" class="editor"&gt;
+                        에디터 영역
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;첨부파일&lt;/th&gt;
+                    &lt;td&gt;
+                        &lt;!-- 파일 업로드 --&gt;
+                        &lt;div class="uploadFile"&gt;
+                            &lt;label&gt;
+                                &lt;input type="file" class="form_file"&gt;
+                                &lt;input type="text" class="form_input" readonly&gt;
+                                &lt;span&gt;파일선택&lt;/span&gt;
+                            &lt;/label&gt;
+                        &lt;/div&gt;
+                        &lt;!-- //파일 업로드 --&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;!-- //게시판 등록 --&gt;
+        </pre>
+    </div>
+
+
+
+    <h3 class="guide_tit_section">갤러리 상세</h3>
+    <div class="guide_preview">
+        <div class="guide_resolution">
+            <button class="guide_res_pc" type="button">PC</button>
+            <button class="guide_res_m" type="button">M</button>
+        </div>
+        <!-- 갤러리상세 -->
+        <div class="gallery_view">
+            <div class="top">
+                <h3 class="tit">2017 하계 캄보디아 쓰롤란 해외봉사</h3>
+                <span class="date">2019.07.01</span>
+            </div>
+            <div><img src="../../html/images/temp/temp_gallery01.jpg" alt=""></div>
+            <p class="page">1 / 21</p>
+            <p class="desc">2017 하계 캄보디아 쓰롤란 해외봉사 설명</p>
+        </div>
+        <!-- //갤러리상세 -->
+
+    </div>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+            &lt;!-- 갤러리상세 --&gt;
+            &lt;div class="gallery_view"&gt;
+                &lt;div class="top"&gt;
+                    &lt;h3 class="tit"&gt;2017 하계 캄보디아 쓰롤란 해외봉사&lt;/h3&gt;
+                    &lt;span class="date"&gt;2019.07.01&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div&gt;&lt;img src="../images/temp/temp_gallery01.jpg" alt=""&gt;&lt;/div&gt;
+                &lt;p class="page"&gt;1 / 21&lt;/p&gt;
+                &lt;p class="desc"&gt;2017 하계 캄보디아 쓰롤란 해외봉사 설명&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;!-- //갤러리상세 --&gt;    
+        </pre>
+    </div>
+
+    <h3 class="guide_tit_section">갤러리 리스트</h3>
+    <div class="guide_preview">
+        <div class="guide_resolution">
+            <button class="guide_res_pc" type="button">PC</button>
+            <button class="guide_res_m" type="button">M</button>
+        </div>
+        <!-- 갤러리 리스트 -->
+        <div class="gallery_list">
+            <ul class="cf">
+                <li>
+                    <a href="#">
+                        <span class="thumb"><img src="../../html/images/temp/temp_gallery02.jpg" alt=""></span>
+                        <span class="tit ellipsis">2017 하계 캄보디아 쓰롤란 해외봉사</span>
+                        <span class="date">2019-04-18</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="thumb"><img src="../../html/images/temp/temp_gallery03.jpg" alt=""></span>
+                        <span class="tit ellipsis">2017 하계 캄보디아 쓰롤란 해외봉사</span>
+                        <span class="date">2019-04-18</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="thumb"><img src="../../html/images/temp/temp_gallery04.jpg" alt=""></span>
+                        <span class="tit ellipsis">2017 하계 캄보디아 쓰롤란 해외봉사</span>
+                        <span class="date">2019-04-18</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="thumb"><img src="../../html/images/temp/temp_gallery05.jpg" alt=""></span>
+                        <span class="tit ellipsis">2017 하계 캄보디아 쓰롤란 해외봉사</span>
+                        <span class="date">2019-04-18</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="thumb"><img src="../../html/images/temp/temp_gallery02.jpg" alt=""></span>
+                        <span class="tit ellipsis">2017 하계 캄보디아 쓰롤란 해외봉사</span>
+                        <span class="date">2019-04-18</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="thumb"><img src="../../html/images/temp/temp_gallery03.jpg" alt=""></span>
+                        <span class="tit ellipsis">2017 하계 캄보디아 쓰롤란 해외봉사</span>
+                        <span class="date">2019-04-18</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="thumb"><img src="../../html/images/temp/temp_gallery04.jpg" alt=""></span>
+                        <span class="tit ellipsis">2017 하계 캄보디아 쓰롤란 해외봉사</span>
+                        <span class="date">2019-04-18</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="thumb"><img src="../../html/images/temp/temp_gallery05.jpg" alt=""></span>
+                        <span class="tit ellipsis">2017 하계 캄보디아 쓰롤란 해외봉사</span>
+                        <span class="date">2019-04-18</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- //갤러리 리스트 -->
+    </div>
+    <div class="guide_guide_code">
+        <pre class="brush:html; gutter:false;">
+            &lt;!-- 갤러리 리스트 --&gt;
+            &lt;div class="gallery_list"&gt;
+                &lt;ul class="cf"&gt;
+                    &lt;li&gt;
+                        &lt;a href="#"&gt;
+                            &lt;span class="thumb"&gt;&lt;img src="../images/temp/temp_gallery02.jpg" alt=""&gt;&lt;/span&gt;
+                            &lt;span class="tit ellipsis"&gt;2017 하계 캄보디아 쓰롤란 해외봉사&lt;/span&gt;
+                            &lt;span class="date"&gt;2019-04-18&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href="#"&gt;
+                            &lt;span class="thumb"&gt;&lt;img src="../images/temp/temp_gallery03.jpg" alt=""&gt;&lt;/span&gt;
+                            &lt;span class="tit ellipsis"&gt;2017 하계 캄보디아 쓰롤란 해외봉사&lt;/span&gt;
+                            &lt;span class="date"&gt;2019-04-18&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href="#"&gt;
+                            &lt;span class="thumb"&gt;&lt;img src="../images/temp/temp_gallery04.jpg" alt=""&gt;&lt;/span&gt;
+                            &lt;span class="tit ellipsis"&gt;2017 하계 캄보디아 쓰롤란 해외봉사&lt;/span&gt;
+                            &lt;span class="date"&gt;2019-04-18&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href="#"&gt;
+                            &lt;span class="thumb"&gt;&lt;img src="../images/temp/temp_gallery05.jpg" alt=""&gt;&lt;/span&gt;
+                            &lt;span class="tit ellipsis"&gt;2017 하계 캄보디아 쓰롤란 해외봉사&lt;/span&gt;
+                            &lt;span class="date"&gt;2019-04-18&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href="#"&gt;
+                            &lt;span class="thumb"&gt;&lt;img src="../images/temp/temp_gallery02.jpg" alt=""&gt;&lt;/span&gt;
+                            &lt;span class="tit ellipsis"&gt;2017 하계 캄보디아 쓰롤란 해외봉사&lt;/span&gt;
+                            &lt;span class="date"&gt;2019-04-18&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href="#"&gt;
+                            &lt;span class="thumb"&gt;&lt;img src="../images/temp/temp_gallery03.jpg" alt=""&gt;&lt;/span&gt;
+                            &lt;span class="tit ellipsis"&gt;2017 하계 캄보디아 쓰롤란 해외봉사&lt;/span&gt;
+                            &lt;span class="date"&gt;2019-04-18&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href="#"&gt;
+                            &lt;span class="thumb"&gt;&lt;img src="../images/temp/temp_gallery04.jpg" alt=""&gt;&lt;/span&gt;
+                            &lt;span class="tit ellipsis"&gt;2017 하계 캄보디아 쓰롤란 해외봉사&lt;/span&gt;
+                            &lt;span class="date"&gt;2019-04-18&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href="#"&gt;
+                            &lt;span class="thumb"&gt;&lt;img src="../images/temp/temp_gallery05.jpg" alt=""&gt;&lt;/span&gt;
+                            &lt;span class="tit ellipsis"&gt;2017 하계 캄보디아 쓰롤란 해외봉사&lt;/span&gt;
+                            &lt;span class="date"&gt;2019-04-18&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;!-- //갤러리 리스트 --&gt; 
+        </pre>
+    </div>
+
+    <!-- //guide -->
+
+    <script>page.layout_ContentBottom()</script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Lato|Noto+Sans+KR');
+
+/* reset */
+*, *:before, *:after {margin:0; padding:0; box-sizing:border-box; -webkit-font-smoothing:antialiased;}
+body{min-width:1200px; word-break: keep-all; -webkit-text-size-adjust: none; line-height:1; font-family:"Lato",'Noto Sans KR', sans-serif; background:#fff !important;}
+fieldset{border:0 none}
+dl,ul,ol,menu,li{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+input,select,textarea{font-size:100%;vertical-align:middle;border-radius:0;}
+button{border:0 none;background-color:transparent;}
+table{width:100%;border-collapse:collapse;border-spacing:0}
+textarea{resize:none;}
+img{border:0;}
+a, a:active, a:hover{text-decoration:none}
+address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
+
+.guide_header{position:relative; padding:15px; background:#0277bd; box-shadow:0 1px 3px 1px rgba(0,0,0,.3); color:#fff; z-index:100; text-align:left !important;}
+.guide_header .guide_tit_logo{display:inline-block; font-size:20px; font-weight:500;}
+.guide_header .btn_guide_gnb_open{display:none;}
+
+.guide_container{position:relative; padding-left:250px; background:#fff;}
+.guide_aside{position:absolute; top:0; left:0; width:250px; height:100%; min-height:calc(100vh - 52px); padding:20px 20px; border-right:1px solid #ddd; background:#fff; overflow-y:auto;}
+.guide_aside .btn_guide_gnb_close{display:none;}
+
+.guide_gnb a{display:block; }
+.guide_gnb .guide_dep_1>li+li{margin-top:30px;}
+.guide_gnb .guide_dep_1>li>a{padding:10px 0; color:#333;}
+.guide_gnb .guide_dep_2{margin-top:10px;}
+.guide_gnb .guide_dep_2>li>a{position:relative; padding:8px 0; font-size:14px; color:#777;}
+.guide_gnb .guide_dep_2{margin-left:10px;}
+.guide_gnb .guide_dep_2 .is-selected{color:#0277bd;}
+.guide_gnb .guide_dep_2 .is-selected:after{content:""; position:absolute; top:50%; right:0; width:6px; height:6px; border:1px solid #0277bd; border-width:1px 1px 0 0;
+    -webkit-transform:rotate(45deg) translate(0,-50%);
+    -moz-transform:rotate(45deg) translate(0,-50%);
+    -ms-transform:rotate(45deg) translate(0,-50%);
+    transform:rotate(45deg) translate(0,-50%);
+}
+
+.guide_content{padding:30px 50px;}
+
+/* 콘텐츠 공통 */
+.guide_alignCenter{text-align:center;}
+
+/* title */
+.guide_tit_guidePage{margin-bottom:50px; padding-bottom:20px; border-bottom:1px solid #ddd; font-size:24px; font-weight:500;}
+.guide_tit_section{margin:50px 0 20px; padding-left:5px; border-left:3px solid #0277bd; font-size:16px; font-weight:500; color:#0277bd;}
+
+/* 기본 테이블 */
+.guide_tbl_guide{margin-top:20px; border-top:1px solid #bbb; font-size:14px;}
+.guide_tbl_guide th{padding:10px 20px; border-bottom:1px solid #ddd; border-left:1px solid #ddd; background:#f8f8f8; font-weight:400; text-align:left;}
+.guide_tbl_guide td{padding:10px 20px; border-bottom:1px solid #ddd; border-left:1px solid #ddd;}
+.guide_tbl_guide th:first-child, .guide_tbl_guide td:first-child{border-left:0;}
+
+.guide_guide_code{margin:20px 0; border:1px solid #ccc;}
+
+.guide_list_desc{margin-top:20px; font-size:14px; color:#666;}
+.guide_list_desc li{padding-left:10px; text-indent:-10px;}
+.guide_list_desc li:before{content:"-"; display:inline-block; margin-right:5px; text-indent:0;}
+.guide_list_desc li+li{margin-top:10px;}
+
+.guide_layout{margin-top:20px;}
+.guide_layout .guide_box{padding:20px; border:1px solid #ddd;}
+.guide_layout .guide_box+.guide_box{margin-top:20px;}
+.guide_layout .guide_box_name+.guide_box{margin-top:20px;}
+
+.guide_preview{position:relative; margin-top:20px; padding:20px; border:1px solid #ccc;}
+.guide_preview .guide_resolution{position:absolute; top:0; right:0; overflow:hidden;}
+.guide_preview .guide_resolution button{display:block; float:left; width:40px; padding:5px 0; background:#eee; cursor:pointer; font-size:11px;}
+
+/* 파일리스트 */
+.guide_filelist{margin-top:20px; border-top:1px solid #bbb; font-size:14px;}
+.guide_filelist th{padding:10px 0; border-bottom:1px solid #ddd; border-left:1px solid #ddd; background:#f8f8f8; font-weight:400;}
+.guide_filelist td{padding:10px 5px; border-bottom:1px solid #ddd; border-left:1px solid #ddd; line-height:130%; color:#555;}
+.guide_filelist th:first-child, .guide_filelist td:first-child{border-left:0;}
+.guide_filelist .guide_list_cell{float:left; width:10%; padding:0 5px;}
+.guide_filelist td a{color:#0277bd;}
+.guide_filelist .guide_works{text-align:center; color:#0277bd;}
+
+/* 진행률 */
+.guide_progress{padding:20px; border:1px solid #ddd; border-radius:5px; font-size:14px;}
+.guide_progress h3{font-weight:400;}
+.guide_progress .guide_progressBox{margin-top:20px; color:#555;}
+.guide_progress .guide_percent{float:right;}
+.guide_progress .guide_bar{margin-top:5px; height:10px; background:#eee;}
+.guide_progress .guide_bar>div{height:10px; background:#87c0cd;}
+
+.dim{display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,.5); z-index:100;}
+
+@media screen and (max-width:1024px){
+    body{min-width:100%;}
+    .guide_header{position:fixed; top:0; left:0; width:100%; text-align:center !important;}
+    .guide_header .btn_guide_gnb_open{display:inline-block; position:absolute; top:0; left:0; padding:15px; color:#fff; font-size:20px;}
+    
+    .guide_container{width:100%; padding-top:50px; padding-left:0;}
+    .guide_aside{display:none; position:fixed; left:0; height:100vh; padding-top:50px; box-shadow: 1px 0 5px rgba(0,0,0,.1); z-index:200;}
+    .guide_aside .btn_guide_gnb_close{display:block; position:absolute; top:5px; right:5px; padding:10px; font-size:20px; opacity:0.5;}
+    .guide_content{padding:20px 15px;}
+    .guide_tit_guidePage{margin-bottom:20px; padding-bottom:10px; font-size:18px;}
+    
+    .guide_tit_section{margin:30px 0 10px;}
+    .guide_box{background:#fff;}
+    .guide_layout>.guide_box{background:rgba(0,0,0,.2);}
+    .guide_layout .guide_box{padding:10px;}
+    .guide_layout .guide_box+.guide_box{margin-top:10px;}
+    .guide_layout .guide_box_name+.guide_box{margin-top:10px;}
+
+    .guide_tbl_guide{font-size:12px;}
+    .guide_tbl_guide td{padding:5px; line-height:150%;}
+    
+    .guide_preview{width:100%;}
+
+    .h_overscroll{overflow-x:auto;}
+}
+
+@media screen and (max-width:768px){
+    .guide_resolution{display:none;}
+    .guide_filelist{width:800px;}
+}
